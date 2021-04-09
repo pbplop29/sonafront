@@ -26,6 +26,12 @@
 .header__center>p{
     margin:1rem;
     text-transform: uppercase;
+    text-decoration: none;
+}
+.header__center>p>a{
+    
+    text-decoration: none;
+    color:black
 }
 .header__right{
     display: flex;
@@ -36,4 +42,10 @@
 .header__right>p{
     margin:1rem;
     text-transform: uppercase;
+}
+
+.header__right>p>a{
+    
+    text-decoration: none;
+    color:black;
 }

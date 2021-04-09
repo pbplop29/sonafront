@@ -1,7 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
+
 import Header from './components/Header';
 import Item from './components/Item';
+
+
 
 import Accessories from './assets/Desktop-Accessories.jpg';
 import ModelX from './assets/Desktop-ModelX.jpeg';
@@ -13,108 +16,65 @@ import SolarRoof from './assets/Desktop-SolarRoof.jpeg';
 
 
 
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
+
+
+
+
+
 function App() {
   return (
-    <div className="App">
-      <Header />
-      
-      <div className="app_itemsContainer">
-          {/*To understand all these attributes inside of Item refer to the long ass comment in Item.js */}
-          <Item
-          title='ModelX'
-          desc='ModelX Description'
-          descLink=''
-          backgroundImg={ModelX}
-          leftBtnTxt='ModelX'
-          leftBtnLink=''
-          rightBtnText='ModelX'
-          rightBtnLink=''
-          twoButtons='true'
-          first
-          />
-
-          <Item 
-          title='Accessories'
-          desc='Accessories Description'
-          descLink=''
-          backgroundImg={Accessories}
-          leftBtnTxt='Accessories'
-          leftBtnLink=''
-          rightBtnText='Accessories'
-          rightBtnLink=''
-          twoButtons='true'
-          
-          />
-
-
-          <Item
-          title='ModelS'
-          desc='ModelS Description'
-          descLink=''
-          backgroundImg={ModelS}
-          leftBtnTxt='ModelS'
-          leftBtnLink=''
-          rightBtnText='ModelS'
-          rightBtnLink=''
-          twoButtons='true'
-          
-          />
-
-          <Item
-          title='Model3'
-          desc='Model3 Description'
-          descLink=''
-          backgroundImg={Model3}
-          leftBtnTxt='Model3'
-          leftBtnLink=''
-          rightBtnText='Model3'
-          rightBtnLink=''
-          twoButtons='true'
-          
-          />
-
-          <Item
-          title='ModelY'
-          desc='ModelY Description'
-          descLink=''
-          backgroundImg={ModelY}
-          leftBtnTxt='ModelY'
-          leftBtnLink=''
-          rightBtnText='ModelY'
-          rightBtnLink=''
-          twoButtons='true'
-          
-          />
-
-          <Item
-          title='SolarPanels'
-          desc='SolarPanels Description'
-          descLink=''
-          backgroundImg={SolarPanels}
-          leftBtnTxt='SolarPanels'
-          leftBtnLink=''
-          rightBtnText='SolarPanels'
-          rightBtnLink=''
-          twoButtons='true'
-          />
-
-          <Item
-          title='SolarRoof'
-          desc='SolarRoof Description'
-          descLink=''
-          backgroundImg={SolarRoof}
-          leftBtnTxt='SolarRoof'
-          leftBtnLink=''
-          rightBtnText='SolarRoof'
-          rightBtnLink=''
-          />
-
-
-
+    
+      <Router>
+        <div>
+              {/* A <Switch> looks through its children <Route>s and
+              renders the first one that matches the current URL. */}
+          <Switch>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path ='/contact'>
+              <Contact />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
             
-      </div>
-    </div>
+          </Switch>
+        </div>
+      </Router>
+    );
+
+}
+
+function Home() {
+  return(
+    <Home />
+    
   );
 }
 
+function About() {
+  return <h2>About</h2>;
+}
+
+function Contact() {
+  return(
+    <Header />
+  );
+}
+
+
 export default App;
+
+
+
+

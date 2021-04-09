@@ -15,15 +15,15 @@ const Header = () => {
 
 
             <div className="header__center">
-                <p>Home</p>
-                <p>About Us</p>
+                <p> <a href='/'>Home</a></p>
+                <p> <a href='/about'>About Us</a></p>
                 <p>Gallery</p>
                 <p>News</p>
             </div>
 
 
             <div className="header__right">
-                <p>Contact Us</p>
+                <p> <a href ='/contact'>Contact Us</a></p>
             </div>
 
 
