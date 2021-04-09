@@ -1,7 +1,7 @@
 
 import './App.css';
 
-import Header from './components/Header';
+import Contact from './components/Contact';
 
 import Home from './components/Home';
 
@@ -36,6 +36,9 @@ function App() {
             <Route path="/">
               <Home />
             </Route>
+            <Route path="/home">
+              <Home />
+            </Route>
             
           </Switch>
         </div>
@@ -49,11 +52,7 @@ function About() {
   return <h2>About</h2>;
 }
 
-function Contact() {
-  return(
-    <Header />
-  );
-}
+
 
 
 export default App;

@@ -45,7 +45,7 @@
 }
 
 .header__right>p>a{
-    
+    margin-left:1rem;
     text-decoration: none;
     color:black;
 }
