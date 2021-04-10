@@ -12,7 +12,6 @@ import { slide as Menu } from 'react-burger-menu'
 import './Home.css' //Styling of the menu bar.
 
 const Home = () => {
-    const [open, setOpen] = useState(false)
     return (
         <div className="App">
       {/* "right" pulls the menu from the right, put "left" if you want otherwise. "disableAutoFocus" prevents from automatic focus of the first menu item.*/}

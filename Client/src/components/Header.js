@@ -1,7 +1,6 @@
 import React from 'react'
 import './Header.css' 
 import TeslaLogo from '../assets/teslaLogoSmall.svg'
-import { slide as Menu } from 'react-burger-menu'
 
 const Header = () => {
     return (
