@@ -4,7 +4,8 @@ import './App.css';
 import Contact from './components/Contact';
 
 import Home from './components/Home';
-
+import GalleryX from './components/GalleryX';
+import News from './components/News';
 
 import {
   BrowserRouter as Router,
@@ -29,6 +30,12 @@ function App() {
           <Switch>
             <Route path="/about">
               <About />
+            </Route>
+            <Route path="/gallery">
+              <GalleryX />
+            </Route>
+            <Route path="/news">
+              <News />
             </Route>
             <Route path ='/contact'>
               <Contact />

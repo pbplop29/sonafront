@@ -16,8 +16,8 @@ const Header = () => {
             <div className="header__center">
                 <p> <a href='/'>Home</a></p>
                 <p> <a href='/about'>About Us</a></p>
-                <p>Gallery</p>
-                <p>News</p>
+                <p><a href='/gallery'>Gallery</a></p>
+                <p><a href='/news'>News</a></p>
             </div>
 
 
