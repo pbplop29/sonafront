@@ -49,3 +49,13 @@
     text-decoration: none;
     color:black;
 }
+
+
+    
+@media(max-width: 1024px){
+    .header__center{
+        display: none;
+    }
+    
+    }
+    

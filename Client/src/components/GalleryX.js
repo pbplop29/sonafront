@@ -4,6 +4,7 @@ import Gallery from 'react-photo-gallery'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Overlay from "react-overlay-component";
+import Header from './Header'
 
 const GalleryX = () => {
     const [isOpen, setOverlay] = useState(false);
@@ -23,6 +24,7 @@ const GalleryX = () => {
     };
     return (
         <div>
+        <Header />
         <h1> Gallery</h1>
 	   <Carousel showArrows={true} width="37%" infiniteLoop>
             {imgList.map((element) =>
@@ -32,7 +34,7 @@ const GalleryX = () => {
 	      </div>
 	    )}
            </Carousel> 
-      </div>
+        </div>
     )
 }
 
