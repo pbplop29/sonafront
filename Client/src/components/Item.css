@@ -55,3 +55,17 @@ margin:auto;
 
 
     
+@media(max-width: 1024px){
+    .item__bottom{
+        margin-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        max-width:100%;
+    }
+    
+    .item__buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    }

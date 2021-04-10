@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import Home from './components/Home';
 import GalleryX from './components/GalleryX';
 import News from './components/News';
+import About from './components/About';
 
 import {
   BrowserRouter as Router,
@@ -55,9 +56,6 @@ function App() {
 }
 
 
-function About() {
-  return <h2>About</h2>;
-}
 
 
 

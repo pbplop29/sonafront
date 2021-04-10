@@ -11,3 +11,6 @@ And to start the server, do:
 npm run dev
 
 in the root folder.
+
+Just made a little change to responsiveness and aligned the sidebar menu as a different component which gets called within 
+header component.

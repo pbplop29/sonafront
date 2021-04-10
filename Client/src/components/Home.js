@@ -8,22 +8,14 @@ import Model3 from '../assets/Desktop-Model3.jpeg';
 import ModelY from '../assets/Desktop-ModelY.jpeg';
 import SolarPanels from '../assets/Desktop-SolarPanels.jpeg';
 import SolarRoof from '../assets/Desktop-SolarRoof.jpeg';
-import { slide as Menu } from 'react-burger-menu'
-import './Home.css' //Styling of the menu bar.
+
 
 const Home = () => {
     return (
         <div className="App">
-      {/* "right" pulls the menu from the right, put "left" if you want otherwise. "disableAutoFocus" prevents from automatic focus of the first menu item.*/}
-      <Menu right disableAutoFocus> 
-      {/* All the menu items. */}
-      <a href='/'>Home</a>
-      <a href='/about'>About Us</a>
-      <a>Gallery</a>
-      <a>News</a>
-      <a href='/contact'>Contact Us</a>
-      </Menu>
-      <Header />
+    
+    <Header />
+    
         <div className="app_itemsContainer">
             {/*To understand all these attributes inside of Item refer to the long ass comment in Item.js */}
             <Item
