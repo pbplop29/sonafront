@@ -13,22 +13,7 @@ import SolarRoof from '../assets/Desktop-SolarRoof.jpeg';
 const Home = () => {
     return (
         <div className="App">
-<<<<<<< HEAD
-    
-    <Header />
-    
-=======
-      {/* "right" pulls the menu from the right, put "left" if you want otherwise. "disableAutoFocus" prevents from automatic focus of the first menu item.*/}
-      <Menu right disableAutoFocus> 
-      {/* All the menu items. */}
-      <a href='/'>Home</a>
-      <a href='/about'>About Us</a>
-      <a href='/gallery'>Gallery</a>
-      <a>News</a>
-      <a href='/contact'>Contact Us</a>
-      </Menu>
-      <Header />
->>>>>>> d3ea3a84c752a0fa979912374e03b4ed7300c979
+                <Header />
         <div className="app_itemsContainer">
             {/*To understand all these attributes inside of Item refer to the long ass comment in Item.js */}
             <Item
