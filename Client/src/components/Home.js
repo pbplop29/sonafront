@@ -19,7 +19,7 @@ const Home = () => {
       {/* All the menu items. */}
       <a href='/'>Home</a>
       <a href='/about'>About Us</a>
-      <a>Gallery</a>
+      <a href='/gallery'>Gallery</a>
       <a>News</a>
       <a href='/contact'>Contact Us</a>
       </Menu>
