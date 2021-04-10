@@ -8,8 +8,7 @@ const Contact = () => {
 
     async function submit(event){
       event.preventDefault();
-      var email_recipients = [];
-      var field = await firebase.firestore().collection("stuff").doc("stuff for website").get();
+      var field = await firebase.firestore().collection("stuff").doc("stuff for website").get(); //Getting the array of email addresses from firebase.
       axios.post('/sendemail', 
 	{emails: field.data()["emails"],
 	 firstName: event.target[0].value,
@@ -17,7 +16,8 @@ const Contact = () => {
 	 email: event.target[2].value,
 	 contactNumber: event.target[3].value,
 	 address: event.target[4].value,
-	 estimatedTransaction: event.target[5].value},)
+	 estimatedTransaction: event.target[5].value},) //Sending a json file containing all the field value of the form along with the email recipients
+                                                        //to the server.
 	.then(res=>{
 	console.log("request sent");
       }).catch((error)=>{
