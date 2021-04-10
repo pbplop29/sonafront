@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 import Gallery from 'react-photo-gallery'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import Overlay from "react-overlay-component";
 import Header from './Header'
 
 const GalleryX = () => {
