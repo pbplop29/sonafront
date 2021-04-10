@@ -4,7 +4,7 @@ npm install express axios cors body-parser nodemon nodemailer
 
 And inside "Client" folder, do:
 
-npm install firebase axios react-burger-menu
+npm install firebase axios react-burger-menu react-responsive-carousel
 
 And to start the server, do:
 
