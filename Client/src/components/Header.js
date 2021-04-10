@@ -1,18 +1,18 @@
 import React from 'react'
 import './Header.css' 
 import TeslaLogo from '../assets/teslaLogoSmall.svg'
-
+import { slide as Menu } from 'react-burger-menu'
 
 const Header = () => {
     return (
         <div className='header'>
 
 
-
             <div className = 'header__logo'>
                 <img src={TeslaLogo} alt="Tesla Logo"/>
             </div>
 
+      
 
             <div className="header__center">
                 <p> <a href='/'>Home</a></p>
