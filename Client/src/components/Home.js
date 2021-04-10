@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Header from './Header'
+import MenuX from './MenuX'
 import Item from './Item';
 import Accessories from '../assets/Desktop-Accessories.jpg';
 import ModelX from '../assets/Desktop-ModelX.jpeg';
@@ -13,6 +14,7 @@ import SolarRoof from '../assets/Desktop-SolarRoof.jpeg';
 const Home = () => {
     return (
         <div className="App">
+            <MenuX />
                 <Header />
         <div className="app_itemsContainer">
             {/*To understand all these attributes inside of Item refer to the long ass comment in Item.js */}

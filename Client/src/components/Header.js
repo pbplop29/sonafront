@@ -24,7 +24,7 @@ const Header = () => {
 
             <div className="header__right">
             <div className="menu__icon">
-                <MenuX />
+                
                 </div>
                 
             </div>

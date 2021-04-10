@@ -3,7 +3,7 @@ import Header from './Header'
 import './Contact.css' 
 import firebase from "firebase"
 import axios from 'axios'
-
+import MenuX from './MenuX'
 const Contact = () => {
 
     async function submit(event){
@@ -27,9 +27,10 @@ const Contact = () => {
 
     return (
         <div className="contact__page__body">
+            <MenuX />
             <Header />
             <section>
-                <div className="container__dad">
+            <div className="container__dad">
                     <div class="container">
                     <div class="title">Mail Us</div>
                         <div class="content">
@@ -69,13 +70,18 @@ const Contact = () => {
                                 </div>
                             </form>
                         </div>
-                    </div>
+                        
                 </div>
+                    </div>
+                    
+           
+                
             <div className="wave wave1"></div>
             <div className="wave wave2"></div>
             <div className="wave wave3"></div>
             <div className="wave wave4"></div>
             </section>
+            
         </div>
     );
 }

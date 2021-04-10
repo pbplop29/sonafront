@@ -11,7 +11,7 @@ section{
 }
 
 section .wave{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -242,5 +242,13 @@ form .user-details .input-box{
     }
     form .user-details .input-box{
         max-width: 90%;
+    }
+}
+
+@media(max-width: 600px){
+    .container__dad{
+        margin : 1rem;
+        margin-top:5rem;
+        
     }
 }

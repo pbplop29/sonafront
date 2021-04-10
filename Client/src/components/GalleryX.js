@@ -1,10 +1,10 @@
 import './GalleryX.css' 
 import React, { useEffect, useState } from 'react'
-import Gallery from 'react-photo-gallery'
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Header from './Header'
-
+import MenuX from './MenuX'
 const GalleryX = () => {
     const [isOpen, setOverlay] = useState(false);
     const imgList= [
@@ -23,17 +23,22 @@ const GalleryX = () => {
     };
     return (
         <div>
+        <MenuX />
         <Header />
-        <h1> Gallery</h1>
-	   <Carousel showArrows={true} width="37%" infiniteLoop>
-            {imgList.map((element) =>
-	      <div>
-	        <img src={element}/>
-	        <p className="legend">Cement</p>
-	      </div>
-	    )}
-           </Carousel> 
-        </div>
+        <div className="gallery__container">
+
+        
+          <h1> Gallery</h1>
+	            <Carousel showArrows={true} width="37%" infiniteLoop >
+              {imgList.map((element) =>
+	        <div>
+	          <img src={element}/>
+	          <p className="legend">Cement</p>
+	        </div>
+	      )}
+            </Carousel> 
+          </div>
+          </div>
     )
 }
 
