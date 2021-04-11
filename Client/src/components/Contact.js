@@ -74,7 +74,7 @@ const Contact = () => {
                 </div>
                     </div>
                     
-           
+
                 
             <div className="wave wave1"></div>
             <div className="wave wave2"></div>

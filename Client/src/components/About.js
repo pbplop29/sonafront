@@ -2,15 +2,17 @@
 import Header from './Header'
 import MenuX from './MenuX'
 import React from "react";
-
-import Gallery from "react-photo-gallery";
-import { photos } from "./photos";
-
+import sonaLogoGif from '../assets/Sona-logo-gif.gif'
+import './About.css'
 const About = () => 
 <div>
     <MenuX />
     <Header />
-<Gallery photos={photos} />;
+    <h1>About</h1>
+    <div className="image">
+    <img src={sonaLogoGif} alt="" />
+    </div>
+
 </div>
 export default About
 

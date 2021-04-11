@@ -1,5 +1,5 @@
 import { slide as Menu } from 'react-burger-menu'
-
+import sonaLogoGif from '../assets/Sona-logo-gif.gif'
 import './MenuX.css' 
 
 
@@ -16,6 +16,11 @@ import './MenuX.css'
     <a href='/gallery'>Gallery</a>
     <a href='/news'>News</a>
     <a href='/contact'>Contact Us</a>
+    <a href='/'>
+    <div className="image">
+    <img src={sonaLogoGif} alt="" />
+    </div>
+    </a>
     </Menu>
             </div>
         )
