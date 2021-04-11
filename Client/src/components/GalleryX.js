@@ -15,19 +15,6 @@ const GalleryX = () => {
   const [url_for_popup, setUrl] = useState("");
   const [popup, setBool] = useState(false);
 
-  function compareObjects(object1, object2, key){ //sorts the url array according to the url.
-    const obj1 = object1[key].toUpperCase()
-    const obj2 = object2[key].toUpperCase()
-
-    if (obj1 < obj2) {
-      return -1
-    }
-    if (obj1 > obj2) {
-      return 1
-    }
-    return 0
-  }
-
   useEffect(() => { 
     //Subscribing to the URL stream that brings URLs in real time such that even if something is changed in the backend, you don't have to refresh
     //the page.
@@ -49,13 +36,24 @@ const GalleryX = () => {
   }, []);
 
   function getIndexOfImage(event, index){
-    console.log(imageUrls[index.index].src);
-    setUrl(imageUrls[index.index].src);
-    setBool(true);
+    setUrl(imageUrls[index.index].src); //Gets the url of the image that we clicked on
+    setBool(true); //Sets 'popup' true such that popup happens.
   }
   
   function closePopup(){
     setBool(false);
+  }
+	
+  function compareObjects(object1, object2, key){ //sorts the url array according to the url.
+    const obj1 = object1[key].toUpperCase()
+    const obj2 = object2[key].toUpperCase()
+    if (obj1 < obj2){
+      return -1
+    }
+    if (obj1 > obj2){
+      return 1
+    }
+    return 0
   }
 
   return (
