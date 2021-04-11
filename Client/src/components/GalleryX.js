@@ -14,7 +14,7 @@ const GalleryX = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => { 
-    //Subscribing the URL stream that brings URLs in real time such that even if something is changed in the backend, you don't have to refresh
+    //Subscribing to the URL stream that brings URLs in real time such that even if something is changed in the backend, you don't have to refresh
     //the page.
     url_stream = firebase.firestore().collection("stuff").doc("URLS").onSnapshot((doc) => {
       var url_list = []; //This stores the urls that come from firebase.
