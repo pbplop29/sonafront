@@ -16,10 +16,12 @@
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
-    background-color: #FEFFFA;
+    background-color: #F4F4F4;
     padding: 25px 30px;
-    border-radius: 15px;
-    box-shadow: 10px 10px 18px black;
+    border: 5px solid #D6D6D6;
+    border-radius: 5rem;
+    box-shadow: -10px 10px 18px black;
+    
     
 }
 
@@ -38,7 +40,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #F8F9FE;
+    background: white;
     overflow: scroll;
 }
 
