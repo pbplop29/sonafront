@@ -7,6 +7,7 @@ import Home from './components/Home';
 import GalleryX from './components/GalleryX';
 import News from './components/News';
 import About from './components/About';
+import Admin from './components/Admin';
 
 import {
   BrowserRouter as Router,
@@ -40,6 +41,9 @@ function App() {
             </Route>
             <Route path ='/contact'>
               <Contact />
+            </Route>
+            <Route path="/admin">
+              <Admin />
             </Route>
             <Route path="/">
               <Home />
