@@ -57,20 +57,25 @@ const GalleryX = () => {
   }
 
   return (
-    <div>
+    <div className='gallery__page'>
     <MenuX />
     <Header />
-    <div className="gallery__container">
-    <h1> Gallery</h1>
-    {loading &&
-      <progress></progress>
-    } 
+    <div classname='section'>
+    <div className="empty__space"></div>
+    <div className="gallery__box__dad">
+    <div className="gallery__box">
+    <div className="gallery__title">
+      <h1>Gallery</h1>
+    </div>
+    
     {!loading && 
 	<Gallery photos={imageUrls} onClick={getIndexOfImage}/>
     }
     {popup &&
 	<Lightbox small={url_for_popup} large={url_for_popup} onClose={closePopup}/>
     }
+    </div>
+    </div>
     </div>
     </div>
   )
