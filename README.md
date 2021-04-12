@@ -4,7 +4,7 @@ npm install express cors body-parser nodemon nodemailer
 
 And inside "Client" folder, do:
 
-npm install firebase axios react-burger-menu react-photo-gallery react-modal-image react-hide-on-scroll
+npm install firebase axios react-burger-menu react-photo-gallery react-modal-image react-hide-on-scroll uuid react-google-recaptcha
 
 And to start the server, do:
 
