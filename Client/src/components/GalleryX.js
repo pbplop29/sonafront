@@ -5,6 +5,10 @@ import Header from './Header'
 import MenuX from './MenuX'
 import Gallery from "react-photo-gallery";
 import { Lightbox } from "react-modal-image";
+import {
+  HideScroll,
+} from "react-hide-on-scroll";
+
 
 var url_stream; //This variable will contain the stream which will bring image URLS. Using a variable makes it possible to cancel the stream easily. 
 
@@ -58,8 +62,14 @@ const GalleryX = () => {
 
   return (
     <div className='gallery__page'>
-    <MenuX />
-    <Header />
+      <MenuX />
+      <HideScroll variant="down">
+  <div className='try'>
+  <Header />
+  </div>
+</HideScroll>
+    
+    
     <div classname='section'>
     <div className="empty__space"></div>
     <div className="gallery__box__dad">
