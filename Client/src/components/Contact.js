@@ -1,28 +1,41 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from './Header'
 import './Contact.css' 
 import firebase from "firebase"
 import axios from 'axios'
 import MenuX from './MenuX'
+import ReCAPTCHA from "react-google-recaptcha";
+
 const Contact = () => {
+
+    const [captchapassed, setCaptcha] = useState(false);
 
     async function submit(event){
       event.preventDefault();
-      var field = await firebase.firestore().collection("stuff").doc("stuff for website").get(); //Getting the array of email addresses from firebase.
-      axios.post('/sendemail', 
-	{emails: field.data()["emails"],
-	 firstName: event.target[0].value,
-	 lastName: event.target[1].value,
-	 email: event.target[2].value,
-	 contactNumber: event.target[3].value,
-	 address: event.target[4].value,
-	 estimatedTransaction: event.target[5].value},) //Sending a json file containing all the field value of the form along with the email recipients
-                                                        //to the server.
-	.then(res=>{
-	console.log("request sent");
-      }).catch((error)=>{
-	console.log(error);
-      });
+      if(captchapassed){
+	var field = await firebase.firestore().collection("stuff").doc("stuff for website").get(); //Getting the array of email addresses from firebase.
+	axios.post('/sendemail', 
+	  {emails: field.data()["emails"],
+	    firstName: event.target[0].value,
+	    lastName: event.target[1].value,
+	    email: event.target[2].value,
+	    contactNumber: event.target[3].value,
+	    address: event.target[4].value,
+	    estimatedTransaction: event.target[5].value},) //Sending a json file containing all the field value of the form along with the email recipients
+	//to the server.
+	  .then(res=>{
+	    console.log("request sent");
+	  }).catch((error)=>{
+	    console.log(error);
+	  });
+      }
+      else{
+	alert("CAPTCHA NOT DONE");
+      }
+    }
+
+    function captchadone(){
+      setCaptcha(true);
     }
 
     return (
@@ -63,6 +76,12 @@ const Contact = () => {
                                         <span class="details">Estimated Transaction</span>
                                             <input type="text" placeholder="Amount in NRs. or Quantity" required></input>
                                     </div>
+       				<div>
+        		   	<ReCAPTCHA
+          			sitekey = "6LfSxKYaAAAAAKFtCw5Gl1CG6yJ_Y-K1mr6o8D4w"
+         			 onChange = {captchadone}
+        			/>
+                              </div>
                                 </div>
                                 
                                 <div class="button">
@@ -76,10 +95,10 @@ const Contact = () => {
                     
 
                 
-            <div className="wave wave1"></div>
+      {/*<div className="wave wave1"></div>
             <div className="wave wave2"></div>
             <div className="wave wave3"></div>
-            <div className="wave wave4"></div>
+            <div className="wave wave4"></div>*/}
             </section>
             
         </div>
