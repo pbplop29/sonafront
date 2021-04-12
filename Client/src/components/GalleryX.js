@@ -70,14 +70,15 @@ const GalleryX = () => {
 </HideScroll>
     
     
-    
+    <div className="whole__section">
     <div className="empty__space"></div>
-    <div className="gallery__box__dad">
+    <div div className="gallery__box__dad">
     <div className="gallery__box">
     <div className="gallery__title">
-      <h1>Gallery</h1>
       
+      <div className="three__dots">
       <MoreHorizIcon />
+      </div>
       
     </div>
     
@@ -88,14 +89,20 @@ const GalleryX = () => {
 	<Lightbox small={url_for_popup} large={url_for_popup} onClose={closePopup}/>
     }
     </div>
-    </div>
+    
         
-    <div className="wave wave1"></div>
+            </div>
+            <div className="section">
+            <div className="wave wave1"></div>
             <div className="wave wave2"></div>
             <div className="wave wave3"></div>
             <div className="wave wave4"></div>
+            </div>
     </div>
+    </div>
+    
   )
-}
+
+  }
 
 export default GalleryX

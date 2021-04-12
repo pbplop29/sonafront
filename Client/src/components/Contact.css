@@ -97,7 +97,10 @@ section .wave.wave4{
 
 
 
-
+.recap{
+    
+    transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0
+}
 
 
 
@@ -106,7 +109,7 @@ section .wave.wave4{
     display: flex;
     justify-content: left;
     align-items: left;
-    
+    z-index: 1001;
     position: relative;
 }
 .container{
@@ -149,6 +152,7 @@ form .input-box span.details{
     display: block;
     font-weight: 500;
     margin-bottom: 5px;
+    
 }
 .user-details .input-box input{
     height: 45px;
@@ -200,7 +204,8 @@ form input[type="radio"]{
 }
 form .button{
     height: 2.8125rem;
-    margin: 2.8175rem 0;
+    margin: 1rem 0;
+    
 }
 form .button input{
     height: 100%;
@@ -214,6 +219,7 @@ form .button input{
     cursor: pointer;
     transition: all 0.3s ease;
     background: linear-gradient(135deg, #FF9A00, #FF0000);
+    
 }
 form .button input:hover{
     /* transform: scale(0.99); */
@@ -249,8 +255,15 @@ form .user-details .input-box{
 
 @media(max-width: 600px){
     .container__dad{
-        margin : 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         margin-top:5rem;
+        max-width: 90%;
         
     }
-}
+
+    
+    .container{
+        max-width: 90%;
+    }
+} 

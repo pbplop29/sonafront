@@ -76,17 +76,19 @@ const Contact = () => {
                                         <span class="details">Estimated Transaction</span>
                                             <input type="text" placeholder="Amount in NRs. or Quantity" required></input>
                                     </div>
-       				<div>
-        		   	<ReCAPTCHA
-          			sitekey = "6LfSxKYaAAAAAKFtCw5Gl1CG6yJ_Y-K1mr6o8D4w"
-         			 onChange = {captchadone}
-        			/>
-                              </div>
+                    <div>
+        		    <ReCAPTCHA className='recap'
+                    sitekey = "6LfSxKYaAAAAAKFtCw5Gl1CG6yJ_Y-K1mr6o8D4w"
+                    onChange = {captchadone}
+        		    />
                                 </div>
                                 
+                                </div>
                                 <div class="button">
                                 <input type="submit" value="Send Mail"></input>
                                 </div>
+                                
+
                             </form>
                         </div>
                         
@@ -95,10 +97,10 @@ const Contact = () => {
                     
 
                 
-      {/*<div className="wave wave1"></div>
+            <div className="wave wave1"></div>
             <div className="wave wave2"></div>
             <div className="wave wave3"></div>
-            <div className="wave wave4"></div>*/}
+            <div className="wave wave4"></div>
             </section>
             
         </div>

@@ -148,7 +148,7 @@ class AdminPanel extends React.Component{
           <button type="submit">Upload</button>
         </form>
         {
-	  this.state.uploading &&
+	    this.state.uploading &&
 	    <progress></progress>
 	}
         <br/>
@@ -157,7 +157,7 @@ class AdminPanel extends React.Component{
           <button type="submit">Add</button>
         </form>
         {
- 	  this.state.emails.map((email) =>
+ 	    this.state.emails.map((email) =>
 	    <div>
 	      <h1> {email} </h1>
 	      <button onClick={() => this.deleteemail(email)}> Delete email </button>

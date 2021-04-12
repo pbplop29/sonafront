@@ -9,6 +9,7 @@ import Model3 from '../assets/Desktop-Model3.jpeg';
 import ModelY from '../assets/Desktop-ModelY.jpeg';
 import SolarPanels from '../assets/Desktop-SolarPanels.jpeg';
 import SolarRoof from '../assets/Desktop-SolarRoof.jpeg';
+import Sonabags from '../assets/Sonabags.jpg';
 
 
 const Home = () => {
@@ -22,7 +23,7 @@ const Home = () => {
             title='ModelX'
             desc='ModelX Description'
             descLink=''
-            backgroundImg={ModelX}
+            backgroundImg={Sonabags}
             leftBtnTxt='ModelX'
             leftBtnLink=''
             rightBtnText='ModelX'
