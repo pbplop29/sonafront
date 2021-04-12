@@ -8,7 +8,7 @@ import { Lightbox } from "react-modal-image";
 import {
   HideScroll,
 } from "react-hide-on-scroll";
-
+import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 
 var url_stream; //This variable will contain the stream which will bring image URLS. Using a variable makes it possible to cancel the stream easily. 
 
@@ -70,12 +70,15 @@ const GalleryX = () => {
 </HideScroll>
     
     
-    <div classname='section'>
+    
     <div className="empty__space"></div>
     <div className="gallery__box__dad">
     <div className="gallery__box">
     <div className="gallery__title">
       <h1>Gallery</h1>
+      
+      <MoreHorizIcon />
+      
     </div>
     
     {!loading && 
@@ -86,7 +89,11 @@ const GalleryX = () => {
     }
     </div>
     </div>
-    </div>
+        
+    <div className="wave wave1"></div>
+            <div className="wave wave2"></div>
+            <div className="wave wave3"></div>
+            <div className="wave wave4"></div>
     </div>
   )
 }

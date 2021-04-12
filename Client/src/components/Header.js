@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css' 
 import TeslaLogo from '../assets/teslaLogoSmall.svg'
-import sonaLogoGif from '../assets/Sona-logo-gif.gif'
+
 
 const Header = () => {
     return (
