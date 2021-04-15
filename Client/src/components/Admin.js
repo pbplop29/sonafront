@@ -4,12 +4,16 @@ import Header from './Header'
 import MenuX from './MenuX'
 import firebase from "firebase";
 import {v4 as uuidv4} from 'uuid';
+import{
+  Route,
+  Link
+} from "react-router-dom";
 
 class Admin extends React.Component{
 
   constructor(props){
     super(props);
-    this.state= {loggedin: false, checkinguser: true}
+    this.state = {loggedin: false, checkinguser: true}
   }
 
   componentDidMount(){
@@ -71,26 +75,64 @@ class Admin extends React.Component{
 
 }
 
-var url_stream;
+function Check(){
+  return(
+    <h1>HELLO</h1>
+  )
+}
+
 var email_stream;
 
 class AdminPanel extends React.Component{
 
   constructor(props){
     super(props);
-    this.state = {uploading: false, image_urls: [], emails: []};
+  }
+
+  render(){
+    return(
+      <div>
+        <Link to={'/admin'}>Dashboard</Link><br/>
+        <Link to={`/admin/gallery`}>Gallery</Link><br/>
+        <Link to={'/admin/email'}>Email</Link><br/>
+        <button onClick={() => this.props.logout()}>LOGOUT</button>
+        <Route exact path={'/admin'}>
+          <DashboardPanel />
+        </Route>
+        <Route path={'/admin/gallery'}>
+          <GalleryPanel />
+        </Route>
+        <Route path={'/admin/email'}>
+          <EmailPanel />
+        </Route>
+      </div>
+    )
+  }
+
+}
+
+class DashboardPanel extends React.Component{
+  render(){
+    return(
+      <div>
+        <br/>
+        <h1>HELLO</h1>
+      </div>
+    )
+  }
+}
+
+var email_stream;
+
+class EmailPanel extends React.Component{
+
+  constructor(props){
+    super(props);
+    this.state =({emails: []});
     this.fileInput = React.createRef();
   }
 
-  async componentDidMount(){
-    url_stream = firebase.firestore().collection("stuff").doc("URLS").onSnapshot((doc) => {
-      this.state.image_urls.length = 0;
-      for(const [key, value] of Object.entries(doc.data())){
-	this.state.image_urls.push([key, value]);
-      }
-      this.state.image_urls.sort();
-      this.setState({});
-    })
+  componentDidMount(){
     email_stream = firebase.firestore().collection("stuff").doc("stuff for website").onSnapshot((doc) => {
       this.state.emails.length = 0;
       this.state.emails = doc.data()["emails"];
@@ -98,8 +140,7 @@ class AdminPanel extends React.Component{
     })
   }
 
-  copmonentWillUnmount(){
-    url_stream();
+  componentWillUnmount(){
     email_stream();
   }
 
@@ -115,6 +156,52 @@ class AdminPanel extends React.Component{
     firebase.firestore().collection("stuff").doc("stuff for website").update({
       emails: firebase.firestore.FieldValue.arrayRemove(email)
     });
+  }
+
+  render(){
+    return(
+      <div>
+        <br/>
+        <form onSubmit={this.addemail}>
+          <input type="email"  placeholder="Email here"/>
+          <button type="submit">Add</button>
+        </form>
+        {
+	  this.state.emails.map((email) =>
+	    <div>
+	      <h1> {email} </h1>
+	      <button onClick={() => this.deleteemail(email)}> Delete email </button>
+	    </div>
+	  )
+        }<br/>
+      </div>
+    )
+  }
+
+}
+
+var url_stream;
+
+class GalleryPanel extends React.Component{
+
+  constructor(props){
+    super(props);
+    this.state = ({image_urls: [], uploading: false});
+  }
+
+  componentDidMount(){
+    url_stream = firebase.firestore().collection("stuff").doc("URLS").onSnapshot((doc) => {
+      this.state.image_urls.length = 0;
+      for(const [key, value] of Object.entries(doc.data())){
+	this.state.image_urls.push([key, value]);
+      }
+      this.state.image_urls.sort();
+      this.setState({});
+    })
+  }
+
+  componentWillUnmount(){
+    url_stream();
   }
 
   uploadimage = async (event) => {
@@ -143,30 +230,18 @@ class AdminPanel extends React.Component{
   render(){
     return(
       <div>
+        <br/>
         <form onSubmit={this.uploadimage}>
           <input type="file" accept=".jpg, .jpeg, .png" ref={this.fileInput} multiple/><br/><br/>
           <button type="submit">Upload</button>
         </form>
         {
-	    this.state.uploading &&
-	    <progress></progress>
-	}
+	this.state.uploading &&
+	<progress></progress>
+        }
         <br/>
-        <form onSubmit={this.addemail}>
-          <input type="email"  placeholder="Email here"/>
-          <button type="submit">Add</button>
-        </form>
         {
- 	    this.state.emails.map((email) =>
-	    <div>
-	      <h1> {email} </h1>
-	      <button onClick={() => this.deleteemail(email)}> Delete email </button>
-	    </div>
-	  )
-        }<br/>
-        <button onClick={() => this.props.logout()}>LOGOUT</button>
-        {
-	  this.state.image_urls.map((url) =>
+  	  this.state.image_urls.map((url) =>
 	    <div>
 	      <img src={url[1]}/><br/>
 	      <button onClick={() => this.deleteimage(url[0])}>Delete</button>

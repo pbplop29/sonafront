@@ -1,6 +1,9 @@
 import React from 'react'
 import './Header.css' 
 import TeslaLogo from '../assets/teslaLogoSmall.svg'
+import{
+  Link
+} from "react-router-dom";
 
 
 const Header = () => {
@@ -14,11 +17,11 @@ const Header = () => {
 
 
             <div className="header__center">
-                <p> <a href='/'>Home</a></p>
-                <p> <a href='/about'>About Us</a></p>
-                <p><a href='/gallery'>Gallery</a></p>
-                <p><a href='/news'>News</a></p>
-                <p> <a href ='/contact'>Contact Us</a></p>
+                <p> <Link to={'/'}>Home</Link></p>
+                <p> <Link to={'/about'}>About Us</Link></p>
+                <p><Link to={'/gallery'}>Gallery</Link></p>
+                <p><Link to={'/news'}>News</Link></p>
+                <p> <Link to='/contact'>Contact Us</Link></p>
             </div>
 
 

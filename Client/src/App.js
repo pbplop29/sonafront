@@ -16,20 +16,12 @@ import {
   Link
 } from "react-router-dom";
 
-
-
-
-
-
-
 function App() {
   return (
-    
       <Router>
         <div>
               {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
-          <Switch>
             <Route path="/about">
               <About />
             </Route>
@@ -45,14 +37,13 @@ function App() {
             <Route path="/admin">
               <Admin />
             </Route>
-            <Route path="/">
+            <Route exact path="/">
               <Home />
             </Route>
             <Route path="/home">
               <Home />
             </Route>
             
-          </Switch>
         </div>
       </Router>
     );
