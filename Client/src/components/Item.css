@@ -1,4 +1,13 @@
 
+* {
+    font-family: sans-serif;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+
+
 
 .item{
     height:100vh;
@@ -17,6 +26,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-snap-align: start;
 }
 
 .item__text{

@@ -134,6 +134,7 @@ const About = () =>
     </div>
   </div>
   <div class="skw-page skw-page-5">
+      
     <div class="skw-page__half skw-page__half--left">
       <div class="skw-page__skewed">
         <div class="skw-page__content"></div>

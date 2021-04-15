@@ -33,6 +33,22 @@
     text-decoration: none;
     color:black
 }
+
+.header__center>p>a::after{
+    
+    content:'';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width .3s;
+}
+
+
+.header__center>p>a:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
 .header__right{
     display: flex;
     justify-content: flex-end;
