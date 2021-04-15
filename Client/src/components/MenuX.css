@@ -1,7 +1,14 @@
     
     @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
     
-    
+    .hidden__button {
+
+        background: transparent;
+        border: none !important;
+        font-size:0;
+    }
+
+
     /* Position and sizing of burger button */  
     .bm-burger-button{  
         position: fixed;  

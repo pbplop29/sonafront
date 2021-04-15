@@ -62,16 +62,40 @@ class Admin extends React.Component{
       <div>
         <MenuX/>
         <Header/>
-        <br/><br/><br/><br/>
-        <div>
-          <form onSubmit={this.onsubmit}>
-            <label>UID</label>
-            <input type= "text" name="username"/><br/>
-            <label>PASSWORD</label>
-	    <input type= "password" name="password"/><br/>
-	    <input type="submit" value="Submit"/>
-          </form>
+        <section>
+          <div>
+            <br/><br/><br/>
+            <div className="container__dad">
+              <div class="container">
+                <div class="title">Log In</div>
+                  <div class="content">
+                    <form onSubmit={this.onsubmit}>
+                      <div class="user-details">
+                        <div class="input-box">
+                        <span class="details">UID</span>
+                        <input type= "text" name="username"/><br/>                          
+                        </div>
+                        <div class="input-box">
+                        <span class="details"l>PASSWORD</span>
+	                      <input type= "password" name="password"/><br/>                          
+                        </div>
+                        <div class="button">
+                        <input type="submit" value="Submit"/>
+                        </div>  
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
         </div>
+
+        <div className="wave wave1"></div>
+        <div className="wave wave2"></div>
+        <div className="wave wave3"></div>
+        <div className="wave wave4"></div>
+
+
+        </section>
       </div>
     )
   }
