@@ -11,8 +11,8 @@ const Contact = () => {
     const [captchapassed, setCaptcha] = useState(false);
 
     async function submit(event){
-      event.preventDefault();
-      if(captchapassed){
+    event.preventDefault();
+    if(captchapassed){
 	var field = await firebase.firestore().collection("stuff").doc("stuff for website").get(); //Getting the array of email addresses from firebase.
 	axios.post('/sendemail', 
 	  {emails: field.data()["emails"],
@@ -23,19 +23,19 @@ const Contact = () => {
 	    address: event.target[4].value,
 	    estimatedTransaction: event.target[5].value},) //Sending a json file containing all the field value of the form along with the email recipients
 	//to the server.
-	  .then(res=>{
+	.then(res=>{
 	    console.log("request sent");
-	  }).catch((error)=>{
+	}).catch((error)=>{
 	    console.log(error);
-	  });
-      }
-      else{
+	});
+    }
+    else{
 	alert("CAPTCHA NOT DONE");
-      }
+    }
     }
 
     function captchadone(){
-      setCaptcha(true);
+    setCaptcha(true);
     }
 
     return (
@@ -75,7 +75,7 @@ const Contact = () => {
                                     
                                     <div class="input-box">
                                         <span class="details">Estimated Transaction</span>
-                                            <input type="text" placeholder="Amount in NRs. or Quantity" required></input>
+                                            <input type="text" placeholder="Amount / Quantity" required></input>
                                     </div>
                     <div>
         		    <ReCAPTCHA className='recap'
