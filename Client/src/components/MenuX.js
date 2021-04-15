@@ -2,7 +2,7 @@ import { slide as Menu } from 'react-burger-menu'
 import sonaLogoGif from '../assets/Sona-logo-gif.gif'
 import './MenuX.css' 
 import{
-  Link
+    Link
 } from "react-router-dom";
 
 
@@ -20,9 +20,11 @@ import{
     <Link to={'/news'}>News</Link>
     <Link to={'/contact'}>Contact Us</Link>
     <Link to={'/'}>
+
     <div className="image">
     <img src={sonaLogoGif} alt="" />
     </div>
+    
     </Link>
     </Menu>
             </div>
