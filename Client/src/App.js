@@ -20,8 +20,12 @@ function App() {
   return (
       <Router>
         <div>
+          <Switch>
               {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
+            <Route exact path="/">
+              <Home />
+            </Route>
             <Route path="/about">
               <About />
             </Route>
@@ -37,13 +41,13 @@ function App() {
             <Route path="/admin">
               <Admin />
             </Route>
-            <Route exact path="/">
-              <Home />
-            </Route>
             <Route path="/home">
               <Home />
             </Route>
-            
+            <Route path="*">
+              <h1> NO ROUTE </h1>
+            </Route>
+          </Switch>
         </div>
       </Router>
     );

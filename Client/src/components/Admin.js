@@ -4,9 +4,12 @@ import Header from './Header'
 import MenuX from './MenuX'
 import firebase from "firebase";
 import {v4 as uuidv4} from 'uuid';
+import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import 'react-pro-sidebar/dist/css/styles.css';
 import{
   Route,
-  Link
+  Link,
+  Switch
 } from "react-router-dom";
 
 class Admin extends React.Component{
@@ -92,19 +95,41 @@ class AdminPanel extends React.Component{
   render(){
     return(
       <div>
-        <Link to={'/admin'}>Dashboard</Link><br/>
-        <Link to={`/admin/gallery`}>Gallery</Link><br/>
-        <Link to={'/admin/email'}>Email</Link><br/>
+        <div class="test">
+        <ProSidebar>
+          <Menu iconShape="square">
+            <MenuItem>
+              Dashboard
+              <Link to={'/admin'} />
+            </MenuItem>
+            <MenuItem>
+              Gallery
+              <Link to={'/admin/gallery'} />
+            </MenuItem>
+            <MenuItem>
+              Email
+              <Link to={'/admin/email'} />
+            </MenuItem>
+          </Menu>
+        </ProSidebar>
+        </div>
+        <div class="other_stuff">
         <button onClick={() => this.props.logout()}>LOGOUT</button>
-        <Route exact path={'/admin'}>
-          <DashboardPanel />
-        </Route>
-        <Route path={'/admin/gallery'}>
-          <GalleryPanel />
-        </Route>
-        <Route path={'/admin/email'}>
-          <EmailPanel />
-        </Route>
+          <Switch>
+            <Route exact path={'/admin'}>
+              <DashboardPanel />
+            </Route>
+            <Route path={'/admin/gallery'}>
+              <GalleryPanel />
+            </Route>
+            <Route path={'/admin/email'}>
+              <EmailPanel />
+            </Route>
+            <Route path={'*'}>
+              <h1> NO ROUTE </h1>
+            </Route>
+          </Switch>
+        </div>
       </div>
     )
   }
