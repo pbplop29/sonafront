@@ -4,7 +4,7 @@ import MenuX from './MenuX'
 import Item from './Item';
 import Accessories from '../assets/Desktop-Accessories.jpg';
 import ModelX from '../assets/Desktop-ModelX.jpeg';
-import ModelS from '../assets/Desktop-ModelS.jpeg';
+import ModelS from '../assets/Desktop-ModelS.jpg';
 import Model3 from '../assets/Desktop-Model3.jpeg';
 import ModelY from '../assets/Desktop-ModelY.jpeg';
 import SolarPanels from '../assets/Desktop-SolarPanels.jpeg';
