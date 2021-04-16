@@ -10,7 +10,7 @@ const News = () => {
         <div>
             <MenuX />
             <Header />
-            <h1>News</h1>
+            <span className='news__title'>News</span>
         </div>
     )
 }

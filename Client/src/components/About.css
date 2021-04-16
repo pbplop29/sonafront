@@ -190,7 +190,7 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-p {
+.mobile__details {
   font-size:20px;
   font-family:'Raleway', serif;
 }

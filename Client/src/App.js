@@ -8,6 +8,7 @@ import GalleryX from './components/GalleryX';
 import News from './components/News';
 import About from './components/About';
 import Admin from './components/Admin';
+import Products from './components/Products';
 
 import {
   BrowserRouter as Router,
@@ -28,6 +29,9 @@ function App() {
             </Route>
             <Route path="/about">
               <About />
+            </Route>
+            <Route path="/products">
+              <Products />
             </Route>
             <Route path="/gallery">
               <GalleryX />

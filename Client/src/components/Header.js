@@ -19,9 +19,11 @@ const Header = () => {
             <div className="header__center">
                 <p> <Link to={'/'}>Home</Link></p>
                 <p> <Link to={'/about'}>About Us</Link></p>
+                <p> <Link to='/products'>Products</Link></p>
                 <p><Link to={'/gallery'}>Gallery</Link></p>
                 <p><Link to={'/news'}>News</Link></p>
                 <p> <Link to='/contact'>Contact Us</Link></p>
+                
             </div>
 
 
