@@ -142,3 +142,116 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile__screen{
+  display:none;
+  
+}
+
+
+
+.colour-block {
+  background:#FF9A00;
+  width:100%;
+  padding:7% 20% 10% 20%;
+  color:#fff;
+  border-style: none!important;
+}
+.white-block {
+  background:#fff;
+  width:100%;
+  padding:7% 20% 10% 20%;
+  color:#FF9A00;
+  border-style: none!important;
+}
+h1 {
+  text-align:center;
+  font-size:80px;
+  font-family:'wire one', serif;
+  font-weight:normal;
+}
+p {
+  font-size:20px;
+  font-family:'Raleway', serif;
+}
+
+
+/*------------------*/
+/*  SKEW CLOCKWISE  */
+/*------------------*/
+.skew-cc{
+  width:100%;
+  height:100px;
+  position:absolute;
+  left:0px;
+  background: linear-gradient(to right bottom, #FF9A00 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+  border-style: none!important;
+}
+
+
+/*-------------------------*/
+/* SKEW COUNTER CLOCKWISE  */
+/*-------------------------*/
+.skew-c{
+  width:100%;
+  height:100px;
+  position:absolute;
+  left:0px;
+  background: linear-gradient(to left bottom, #fff 49%, #FF9A00 50%);
+  border-style: none!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 550px){
+.pc__screen{
+  display:none;
+}
+
+.mobile__screen{
+  display: block;
+}
+
+}
+
