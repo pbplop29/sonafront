@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Header from './Header'
 import MenuX from './MenuX'
 import Item from './Item';
+import './Home.css';
 import Accessories from '../assets/Desktop-Accessories.jpg';
 import ModelX from '../assets/Desktop-ModelX.jpeg';
 import ModelS from '../assets/Desktop-ModelS.jpg';
@@ -107,10 +108,6 @@ const Home = () => {
             rightBtnText='SolarRoof'
             rightBtnLink=''
             />
-
-
-
-
         </div>
     </div>
     )
