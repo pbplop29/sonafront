@@ -1,5 +1,9 @@
 *{
     -ms-overflow-style: none;
+    scroll-snap-type: y proximity;
+    
+    
+
 }
 ::-webkit-scrollbar {
     display: none;
