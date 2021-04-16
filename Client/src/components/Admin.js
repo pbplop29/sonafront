@@ -4,8 +4,9 @@ import Header from './Header'
 import MenuX from './MenuX'
 import firebase from "firebase";
 import {v4 as uuidv4} from 'uuid';
-import { ProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import { ProSidebar, SidebarHeader, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
+import './AdminSidebar.scss';
 import{
   Route,
   Link,
@@ -34,7 +35,7 @@ class Admin extends React.Component{
 	alert("LOGGED IN");
 	this.setState({loggedin: true});
       }).catch((error) => {
-	console.log(error.message);
+	alert(error.message);
       })
     }).catch((error) => {
       console.log(error.message);
@@ -73,7 +74,7 @@ class Admin extends React.Component{
                       <div class="user-details">
                         <div class="input-box">
                         <span class="details">UID</span>
-                        <input type= "text" name="username"/><br/>                          
+                        <input type= "email" name="username"/><br/>                          
                         </div>
                         <div class="input-box">
                         <span class="details"l>PASSWORD</span>
@@ -88,24 +89,15 @@ class Admin extends React.Component{
                 </div>
             </div>
         </div>
-
         <div className="wave wave1"></div>
         <div className="wave wave2"></div>
         <div className="wave wave3"></div>
         <div className="wave wave4"></div>
-
-
         </section>
       </div>
     )
   }
 
-}
-
-function Check(){
-  return(
-    <h1>HELLO</h1>
-  )
 }
 
 var email_stream;
@@ -118,15 +110,16 @@ class AdminPanel extends React.Component{
 
   render(){
     return(
-      <div>
-        <div class="test">
+      <div className="parent-con">
+      <div className="sidebar">
         <ProSidebar>
           <Menu iconShape="square">
+            <div className="except-logout">
             <MenuItem>
               Dashboard
-              <Link to={'/admin'} />
+      	      <Link to={'/admin'} />
             </MenuItem>
-            <MenuItem>
+      	    <MenuItem>
               Gallery
               <Link to={'/admin/gallery'} />
             </MenuItem>
@@ -134,11 +127,21 @@ class AdminPanel extends React.Component{
               Email
               <Link to={'/admin/email'} />
             </MenuItem>
+            <MenuItem>
+              About
+              <Link to={'/admin/about'} />
+            </MenuItem>
+            </div>
+            <div className="logout">
+              <MenuItem>
+                Logout
+                <a onClick={() => this.props.logout()} />
+              </MenuItem>
+            </div>
           </Menu>
         </ProSidebar>
-        </div>
-        <div class="other_stuff">
-        <button onClick={() => this.props.logout()}>LOGOUT</button>
+      </div>
+      <div className="other_stuff">
           <Switch>
             <Route exact path={'/admin'}>
               <DashboardPanel />
@@ -149,6 +152,9 @@ class AdminPanel extends React.Component{
             <Route path={'/admin/email'}>
               <EmailPanel />
             </Route>
+            <Route path={'/admin/about'}>
+              <AboutPanel />
+            </Route>
             <Route path={'*'}>
               <h1> NO ROUTE </h1>
             </Route>
@@ -158,6 +164,17 @@ class AdminPanel extends React.Component{
     )
   }
 
+}
+
+class AboutPanel extends React.Component{
+  render(){
+    return(
+      <div>
+        <br/>
+        <h1>ABOUT</h1>
+      </div>
+    )
+  }
 }
 
 class DashboardPanel extends React.Component{

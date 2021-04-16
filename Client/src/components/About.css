@@ -1,6 +1,3 @@
-
-
-
 /*Downloaded from https://www.codeseek.co/suez/skewed-one-page-scroll-gadLre */
 *, *:before, *:after {
  box-sizing: border-box;
@@ -9,7 +6,7 @@
 }
 
 body {
- background: #15181A;
+ background: #ffffff;
  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
