@@ -12,6 +12,7 @@ import{
   Link,
   Switch
 } from "react-router-dom";
+import { slide as SlideMenu } from 'react-burger-menu';
 
 class Admin extends React.Component{
 
@@ -111,37 +112,46 @@ class AdminPanel extends React.Component{
   render(){
     return(
       <div className="parent-con">
-      <div className="sidebar">
-        <ProSidebar>
-          <Menu iconShape="square">
-            <div className="except-logout">
-            <MenuItem>
-              Dashboard
-      	      <Link to={'/admin'} />
-            </MenuItem>
-      	    <MenuItem>
-              Gallery
-              <Link to={'/admin/gallery'} />
-            </MenuItem>
-            <MenuItem>
-              Email
-              <Link to={'/admin/email'} />
-            </MenuItem>
-            <MenuItem>
-              About
-              <Link to={'/admin/about'} />
-            </MenuItem>
-            </div>
-            <div className="logout">
+        <div>
+          <SlideMenu>
+            <Link to={'/admin'}>Dashboard</Link>
+            <Link to={'/admin/gallery'}>Gallery</Link>
+            <Link to={'/admin/email'}>Email</Link>
+            <Link to={'/admin/about'}>About</Link>
+            <a onClick={() => this.props.logout()}>Logout</a>
+          </SlideMenu>
+        </div>
+        <div className="sidebar">
+          <ProSidebar collapsed = {false} collapsedWidth="50px">
+            <Menu iconShape="square">
+              <div className="except-logout">
               <MenuItem>
-                Logout
-                <a onClick={() => this.props.logout()} />
+                Dashboard
+      	        <Link to={'/admin'} />
               </MenuItem>
-            </div>
-          </Menu>
-        </ProSidebar>
-      </div>
-      <div className="other_stuff">
+      	      <MenuItem>
+                Gallery
+                <Link to={'/admin/gallery'} />
+              </MenuItem>
+              <MenuItem>
+                Email
+                <Link to={'/admin/email'} />
+              </MenuItem>
+              <MenuItem>
+                About
+                <Link to={'/admin/about'} />
+              </MenuItem>
+              </div>
+              <div className="logout">
+                <MenuItem>
+                  Logout
+                  <a onClick={() => this.props.logout()} />
+                </MenuItem>
+              </div>
+            </Menu>
+          </ProSidebar>
+        </div>
+        <div className="other_stuff">
           <Switch>
             <Route exact path={'/admin'}>
               <DashboardPanel />
@@ -253,6 +263,7 @@ class GalleryPanel extends React.Component{
   constructor(props){
     super(props);
     this.state = ({image_urls: [], uploading: false});
+    this.fileInput = React.createRef();
   }
 
   componentDidMount(){
