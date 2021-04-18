@@ -12,7 +12,6 @@ import{
   Link,
   Switch
 } from "react-router-dom";
-import { slide as SlideMenu } from 'react-burger-menu';
 
 class Admin extends React.Component{
 
@@ -112,16 +111,7 @@ class AdminPanel extends React.Component{
   render(){
     return(
       <div className="parent-con">
-        <div>
-          <SlideMenu>
-            <Link to={'/admin'}>Dashboard</Link>
-            <Link to={'/admin/gallery'}>Gallery</Link>
-            <Link to={'/admin/email'}>Email</Link>
-            <Link to={'/admin/about'}>About</Link>
-            <a onClick={() => this.props.logout()}>Logout</a>
-          </SlideMenu>
-        </div>
-        <div className="sidebar">
+      <div className="sidebar">
           <ProSidebar collapsed = {false} collapsedWidth="50px">
             <Menu iconShape="square">
               <div className="except-logout">
