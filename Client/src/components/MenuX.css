@@ -13,22 +13,23 @@
     .bm-burger-button{  
         position: fixed;  
         right: 30px;    
-        top:20px;
+        top:25px;
         width: 25px;    
         height: 25px;   
         float: right;  
+        
 
     } 
         
     /* Color/shape of burger icon bars */ 
     .bm-burger-bars { 
-        background: #373a47;  
+        background: black;  
 
     } 
         
     /* Color/shape of burger icon bars on hover*/ 
     .bm-burger-bars-hover {   
-        background: #FF4D00; 
+        background: black; 
 
     } 
         
@@ -59,7 +60,7 @@
         
     /* General sidebar styles */  
     .bm-menu {    
-        background: #333947;    
+        background: #000000;    
         padding: 2.5em 1.5em 0; 
         font-size: 1.15em;  
         opacity: 98%;
@@ -69,13 +70,13 @@
         
     /* Morph shape necessary with bubble or elastic */    
     .bm-morph-shape { 
-        fill: #333947;  
+        fill: #D0D0D0;  
 
     } 
         
     /* Wrapper for item list */   
     .bm-item-list {   
-        color: #b8b7ad; 
+        color: #D0D0D0; 
         padding: 0.8em; 
         text-decoration: none;
         text-transform: uppercase;
@@ -86,7 +87,7 @@
     /* Individual item */ 
     .bm-item {    
         display: inline-block;  
-        color: #ffff;   
+        color: #F6F6F6;   
         text-decoration: none;  
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -96,10 +97,25 @@
 
         
     .bm-item:hover{   
-        color: #FFC100; 
+        color: #FFBF00; 
 
     } 
-        
+
+
+    .bm-item::after{
+    
+        content:'';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #FFBF00;
+        transition: width .3s;
+    }
+
+    .bm-item:hover::after{
+    width: 52%;
+    transition: width .3s;
+}    
     .bm-overlay { 
         background: rgba(0, 0, 0, 0.3); 
 
@@ -122,4 +138,5 @@
     .image>img{
         max-width: 200px;
         max-height: 200px;
+        
     }

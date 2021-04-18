@@ -114,10 +114,10 @@ body {
  background-image: url("../assets/Sonabags.jpg");
 }
 .skw-page-1 .skw-page__half--right .skw-page__content {
-  background: linear-gradient(-135deg, #FF9A00,   #FF9A00, #FF0000);
+background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
 }
 .skw-page-2 .skw-page__half--left .skw-page__content {
-  background: linear-gradient(135deg, #FF9A00,   #FF9A00, #FF0000);
+background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
 }
 .skw-page-2 .skw-page__half--right .skw-page__content {
  background-image: url("../assets//Desktop-ModelX.jpeg");
@@ -126,10 +126,10 @@ body {
  background-image: url("../assets/Desktop-ModelS.jpeg");
 }
 .skw-page-3 .skw-page__half--right .skw-page__content {
-  background: linear-gradient(-135deg, #FF9A00,   #FF9A00, #FF0000);
+background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
 }
 .skw-page-4 .skw-page__half--left .skw-page__content {
-  background: linear-gradient(135deg, #FF9A00,   #FF9A00, #FF0000);
+background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
 }
 .skw-page-4 .skw-page__half--right .skw-page__content {
  background-image: url("../assets/Desktop-ModelY.jpeg");
@@ -138,7 +138,7 @@ body {
  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/img-test.jpg");
 }
 .skw-page-5 .skw-page__half--right .skw-page__content {
-  background: linear-gradient(-135deg, #FF9A00,   #FF9A00, #FF0000);
+background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
 }
 
 
@@ -167,7 +167,7 @@ body {
 
 
 .colour-block {
-  background:#FF9A00;
+  background:#FFB603;
   width:100%;
   padding:7% 20% 10% 20%;
   color:#fff;
@@ -177,7 +177,7 @@ body {
   background:#fff;
   width:100%;
   padding:7% 20% 10% 20%;
-  color:#FF9A00;
+  color:#FFB603;
   border-style: none!important;
 }
 h1 {
@@ -204,7 +204,7 @@ h1 {
   height:100px;
   position:absolute;
   left:0px;
-  background: linear-gradient(to right bottom, #FF9A00 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+  background: linear-gradient(to right bottom, #FFB603 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
   border-style: none!important;
 }
 
@@ -217,7 +217,7 @@ h1 {
   height:100px;
   position:absolute;
   left:0px;
-  background: linear-gradient(to left bottom, #fff 49%, #FF9A00 50%);
+  background: linear-gradient(to left bottom, #fff 49%, #FFB603 50%);
   border-style: none!important;
 }
 
@@ -248,7 +248,7 @@ h1 {
 
 
 
-@media(max-width: 550px){
+@media(max-width: 1024px){
 .pc__screen{
   display:none;
 }

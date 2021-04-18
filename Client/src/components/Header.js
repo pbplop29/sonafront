@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css' 
-import TeslaLogo from '../assets/teslaLogoSmall.svg'
+import Sonalogoborder from '../assets/sona-logo-png-border.png'
 import{
   Link
 } from "react-router-dom";
@@ -10,9 +10,9 @@ const Header = () => {
     return (
         <div className='header'>
 
-
+            <div className="header__bg"></div>
             <div className = 'header__logo'>
-                <img src={TeslaLogo} alt="Tesla Logo"/>
+                <img src={Sonalogoborder} alt="Tesla Logo"/>
             </div>
 
 
@@ -36,7 +36,7 @@ const Header = () => {
             
             
 
-
+            
         </div>
     )
 }

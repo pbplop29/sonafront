@@ -2,7 +2,7 @@
 
 .empty__space__pr{
     height: 5rem;
-    
+    background: #FFB403;
 }
 
 
@@ -11,9 +11,10 @@
 .product__body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
-    min-height: 100vh;
+    height: 130vh;
+    background: linear-gradient(-30deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403);
 }
 
 
@@ -49,7 +50,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #FFBA04;
+    background: #8A2387;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     clip-path: circle(120px at center);
     transition: 0.5s;
 }
@@ -60,7 +64,49 @@
     clip-path: circle(400px at center);
 }
 
+.card:hover .circle::before,.card:active .circle::before{
+    background: #3D8D56;
+    clip-path: circle(400px at center);
+}
 
+
+
+.card .circle2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.card .circle2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #8A2387;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+
+.card:hover .circle2::before,.card:active .circle2::before{
+    background: #E85223;
+    clip-path: circle(400px at center);
+}
+
+.card:hover .circle2::before,.card:active .circle2::before{
+    background: #E85223;
+    clip-path: circle(400px at center);
+}
 
 .card img{
     position: absolute;
