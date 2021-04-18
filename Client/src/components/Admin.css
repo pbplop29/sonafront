@@ -1,3 +1,4 @@
+
 .parent-con{
   height: 100vh;
   width: 100vw;
@@ -57,7 +58,7 @@ section .wave{
 
 section .wave.wave1{
     animation: animate 10s linear infinite;
-    z-index: 1000;
+    z-index: 999;
     opacity: 0.9;
     animation-delay: 0s;
     bottom: 0;

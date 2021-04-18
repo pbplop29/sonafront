@@ -8,8 +8,110 @@ const Products = () => {
         <div>
             <MenuX />
             <Header />
+
+            <div className="product__body__dad">
+
+
+            <div className="empty__space__pr"></div>
+            
             <div className="product__body"> 
             
+
+
+
+            <div className="card">
+                <div className="circle">
+                    <div className="content">
+                        <h2 className='product__title'>Sona Shree</h2>
+                        <span className='product__desc'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, eos? 
+                            Rerum odit reiciendis aperiam deserunt molestias hic
+                            ex eveniet. Magnam, voluptatem dolor corporis iste r
+                            
+                        </span>
+
+                    </div>
+                    
+                </div>
+                <img src={sonasac} alt=""/>
+            </div>
+
+
+
+
+            <div className="card">
+                <div className="circle">
+                    <div className="content">
+                        <h2 className='product__title'>Sona Shree</h2>
+                        <span className='product__desc'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, eos? 
+                            Rerum odit reiciendis aperiam deserunt molestias hic
+                            ex eveniet. Magnam, voluptatem dolor corporis iste r
+                            
+                        </span>
+
+                    </div>
+                    
+                </div>
+                <img src={sonasac} alt=""/>
+            </div>
+            
+
+
+
+
+
+            <div className="card">
+                <div className="circle">
+                    <div className="content">
+                        <h2 className='product__title'>Sona Shree</h2>
+                        <span className='product__desc'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, eos? 
+                            Rerum odit reiciendis aperiam deserunt molestias hic
+                            ex eveniet. Magnam, voluptatem dolor corporis iste r
+                            
+                        </span>
+
+                    </div>
+                    
+                </div>
+                <img src={sonasac} alt=""/>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div className="card">
+                <div className="circle">
+                    <div className="content">
+                        <h2 className='product__title'>Sona Shree</h2>
+                        <span className='product__desc'>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, eos? 
+                            Rerum odit reiciendis aperiam deserunt molestias hic
+                            ex eveniet. Magnam, voluptatem dolor corporis iste r
+                            
+                        </span>
+
+                    </div>
+                    
+                </div>
+                <img src={sonasac} alt=""/>
+            </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -40,8 +142,8 @@ const Products = () => {
             
             
             
-            
             </div>
+        </div>
         </div>
     )
 }
