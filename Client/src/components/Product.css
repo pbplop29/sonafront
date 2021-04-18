@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Josefin+Slab:wght@600&display=swap');
 
 .empty__space__pr{
     height: 5rem;
@@ -13,7 +13,7 @@
     flex-direction: column;
     
     align-items: center;
-    height: 130vh;
+    height: 100vh;
     background: linear-gradient(-30deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403);
 }
 
@@ -145,6 +145,7 @@ height: 500px;
 }
 
 .card .content .product__title{
+    font-family: 'Josefin Sans', sans-serif;
     color: white;
     text-transform: uppercase;
     font-size: 2rem;
@@ -156,6 +157,8 @@ height: 500px;
     
     position: relative;
     color: white;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.1rem;
     
 }
 
