@@ -1,14 +1,4 @@
-.bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 8px;
-  top: 8px;
-}
 
-.bm-menu{
-  background: linear-gradient(-135deg, #FF9A00,   #FF9A00, #FF0000) ;
-}
 
 .parent-con{
   height: 100vh;
@@ -75,7 +65,7 @@ section .wave{
 
 section .wave.wave1{
     animation: animate 10s linear infinite;
-    z-index: 1000;
+    z-index: 999;
     opacity: 0.9;
     animation-delay: 0s;
     bottom: 0;
