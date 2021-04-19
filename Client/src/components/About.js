@@ -156,11 +156,46 @@ const About = () =>
     </div>
     </div>
 
+
+
     <div class="skw-page skw-page-6">
+      
+      <div class="skw-page__half skw-page__half--left">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content">
+          <h2 class="skw-page__heading">Location</h2>
+            <p class="skw-page__description">
+            Address: Sonapur Minerals & Oil Pvt. Ltd.<br></br>
+Bijauri-1,Dang,Nepal<br></br>
+Phone: +977 82 530182<br></br>
+Po. Box No. 20499<br></br>
+Email : info@sonacement.com<br></br>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="skw-page__half skw-page__half--right">
+        <div class="skw-page__skewed">
+          <div class="skw-page__content">
+            
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <div class="skw-page skw-page-7">
     <div class="skw-page__half skw-page__half--left">
       <div class="skw-page__skewed">
         <div class="skw-page__content">
-          <h2 class="skw-page__heading">Socials</h2>
+          
+        </div>
+      </div>
+    </div>
+    <div class="skw-page__half skw-page__half--right">
+      <div class="skw-page__skewed">
+        <div class="skw-page__content">
+        <h2 class="skw-page__heading">Socials</h2>
           <p class="skw-page__description">
             
 
@@ -193,11 +228,6 @@ const About = () =>
 
             </p>
         </div>
-      </div>
-    </div>
-    <div class="skw-page__half skw-page__half--right">
-      <div class="skw-page__skewed">
-        <div class="skw-page__content"></div>
       </div>
     </div>
   </div>
@@ -248,7 +278,20 @@ const About = () =>
 
 <div class="skew-cc"></div> 
 <div class="white-block">
-  <h1>Socials</h1>
+<h1>Location</h1>
+  <div className='mobile__details'>
+  Address: Sonapur Minerals & Oil Pvt. Ltd.<br></br>
+Bijauri-1,Dang,Nepal<br></br>
+Phone: +977 82 530182<br></br>
+Po. Box No. 20499<br></br>
+Email : info@sonacement.com<br></br>
+  </div>
+</div>
+
+
+<div class="skew-c"></div>
+<div class="colour-block">
+<h1>Socials</h1>
   <div className='mobile__details'>
 
 
@@ -293,7 +336,6 @@ const About = () =>
     
   </div>
 </div>
-</div>
 
 
 
@@ -316,7 +358,7 @@ const About = () =>
 
 
 </div>
-
+</div>
 
 
 

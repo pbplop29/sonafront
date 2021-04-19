@@ -13,7 +13,7 @@
     flex-direction: column;
     position: relative;
     align-items: center;
-    min-height: 200vh;
+    min-height: 190vh;
     background: linear-gradient(-30deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403);
 }
 

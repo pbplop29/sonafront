@@ -74,8 +74,8 @@ const Contact = () => {
                                     </div>
                                     
                                     <div class="input-box">
-                                        <span class="details">Estimated Transaction</span>
-                                            <input type="text" placeholder="Amount / Quantity" required></input>
+                                        <span class="details">Subject</span>
+                                            <input type="text" placeholder="Reason of contact" required></input>
                                     </div>
                     <div>
         		    <ReCAPTCHA className='recap'

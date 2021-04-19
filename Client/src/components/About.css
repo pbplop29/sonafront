@@ -159,7 +159,12 @@ background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03, 
   background-image: url("../assets/Desktop-ModelY.jpeg");
   }
 
-
+  .skw-page-7 .skw-page__half--left .skw-page__content {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/img-test.jpg");
+   }
+   .skw-page-7 .skw-page__half--right .skw-page__content {
+   background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
+   }
 
 
 
