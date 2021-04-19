@@ -3,9 +3,9 @@ import Header from './Header'
 import MenuX from './MenuX'
 import Item from './Item';
 import './Home.css';
-import Accessories from '../assets/Desktop-Accessories.jpg';
+import Accessories from '../assets/Desktop-Accessories.jpeg';
 import ModelX from '../assets/Desktop-ModelX.jpeg';
-import ModelS from '../assets/Desktop-ModelS.jpg';
+
 import Model3 from '../assets/Desktop-Model3.jpeg';
 import ModelY from '../assets/Desktop-ModelY.jpeg';
 import SolarPanels from '../assets/Desktop-SolarPanels.jpeg';
@@ -51,7 +51,7 @@ const Home = () => {
             title='ModelS'
             desc='ModelS Description'
             descLink=''
-            backgroundImg={ModelS}
+            backgroundImg={ModelX}
             leftBtnTxt='ModelS'
             leftBtnLink=''
             rightBtnText='ModelS'
