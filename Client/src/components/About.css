@@ -1,4 +1,12 @@
-/*Downloaded from https://www.codeseek.co/suez/skewed-one-page-scroll-gadLre */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+
+
+
+
+
+
+
 *, *:before, *:after {
  box-sizing: border-box;
  margin: 0;
@@ -62,6 +70,7 @@ body {
   right: -40%;
 }
 .skw-page__content {
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,14 +107,16 @@ body {
           transform: skewX(18deg) scale(0.95);
 }
 .skw-page__heading {
+  font-family:'wire one', serif;
   margin-bottom: 15px;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 5rem;
   text-align: center;
 }
 .skw-page__description {
   font-size: 18px;
   text-align: center;
+  font-family:'Raleway', serif;
 }
 .skw-page__link {
   color: #FFA0A0;
@@ -114,10 +125,10 @@ body {
  background-image: url("../assets/Sonabags.jpg");
 }
 .skw-page-1 .skw-page__half--right .skw-page__content {
-  background: linear-gradient(-135deg, #FF9A00,   #FF9A00, #FF0000);
+background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
 }
 .skw-page-2 .skw-page__half--left .skw-page__content {
-  background: linear-gradient(135deg, #FF9A00,   #FF9A00, #FF0000);
+background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
 }
 .skw-page-2 .skw-page__half--right .skw-page__content {
  background-image: url("../assets//Desktop-ModelX.jpeg");
@@ -126,10 +137,10 @@ body {
  background-image: url("../assets/Desktop-ModelS.jpeg");
 }
 .skw-page-3 .skw-page__half--right .skw-page__content {
-  background: linear-gradient(-135deg, #FF9A00,   #FF9A00, #FF0000);
+background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
 }
 .skw-page-4 .skw-page__half--left .skw-page__content {
-  background: linear-gradient(135deg, #FF9A00,   #FF9A00, #FF0000);
+background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
 }
 .skw-page-4 .skw-page__half--right .skw-page__content {
  background-image: url("../assets/Desktop-ModelY.jpeg");
@@ -138,12 +149,22 @@ body {
  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/img-test.jpg");
 }
 .skw-page-5 .skw-page__half--right .skw-page__content {
-  background: linear-gradient(-135deg, #FF9A00,   #FF9A00, #FF0000);
+background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
 }
 
+.skw-page-6 .skw-page__half--left .skw-page__content {
+  background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
+  }
+  .skw-page-6 .skw-page__half--right .skw-page__content {
+  background-image: url("../assets/Desktop-ModelY.jpeg");
+  }
 
-
-
+  .skw-page-7 .skw-page__half--left .skw-page__content {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/img-test.jpg");
+   }
+   .skw-page-7 .skw-page__half--right .skw-page__content {
+   background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
+   }
 
 
 
@@ -167,7 +188,7 @@ body {
 
 
 .colour-block {
-  background:#FF9A00;
+  background:#FFB603;
   width:100%;
   padding:7% 20% 10% 20%;
   color:#fff;
@@ -177,21 +198,21 @@ body {
   background:#fff;
   width:100%;
   padding:7% 20% 10% 20%;
-  color:#FF9A00;
+  color:#FFB603;
   border-style: none!important;
 }
 h1 {
-  text-align:center;
-  font-size:80px;
+  text-align:justify;
+  font-size:75px;
   font-family:'wire one', serif;
   font-weight:normal;
   margin-block-start: 0.80em;
-    margin-block-end: 0.67em;
+    margin-block-end: 0.3em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
 .mobile__details {
-  font-size:20px;
+  font-size:15px;
   font-family:'Raleway', serif;
 }
 
@@ -204,7 +225,7 @@ h1 {
   height:100px;
   position:absolute;
   left:0px;
-  background: linear-gradient(to right bottom, #FF9A00 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+  background: linear-gradient(to right bottom, #FFB603 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
   border-style: none!important;
 }
 
@@ -217,7 +238,7 @@ h1 {
   height:100px;
   position:absolute;
   left:0px;
-  background: linear-gradient(to left bottom, #fff 49%, #FF9A00 50%);
+  background: linear-gradient(to left bottom, #fff 49%, #FFB603 50%);
   border-style: none!important;
 }
 
@@ -248,7 +269,7 @@ h1 {
 
 
 
-@media(max-width: 550px){
+@media(max-width: 1024px){
 .pc__screen{
   display:none;
 }
@@ -258,4 +279,167 @@ h1 {
 }
 
 }
+
+
+@media(max-width: 1240px){
+  .skw-page__heading {
+    font-family:'wire one', serif;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .skw-page__description {
+    font-size: 1rem;
+    text-align: center;
+    font-family:'Raleway', serif;
+  }
+  
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul {
+  
+  display:flex;
+  flex-direction: column;
+  margin:0;
+  padding:0;
+  align-items: center;
+}
+
+ul li {
+  list-style:none;
+  margin:1rem;
+}
+
+ul li a .fa {
+  font-size: 30px;
+  color: #262626;
+  line-height:50px;
+  transition: .5s;
+  padding-right: 14px;
+}
+
+ul li a span {
+  padding:0;
+  margin:0;
+  position:absolute;
+  top: 30px;
+  color: #262626;
+  letter-spacing: 4px;
+  transition: .5s;
+}
+
+ul li a {
+  text-decoration: none;
+  display:absolute;
+  display:block;
+  width:210px;
+  height:80px;
+  background: #fff;
+  text-align:left;
+  padding-left: 20px;
+  transform: rotate(-30deg) skew(25deg) translate(0,0);
+  transition:.5s;
+  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+}
+ul li a:before {
+  content: '';
+  position: absolute;
+  top:10px;
+  left:-20px;
+  height:100%;
+  width:20px;
+  background: #b1b1b1;
+  transform: .5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+ul li a:after {
+  content: '';
+  position: absolute;
+  bottom:-20px;
+  left:-10px;
+  height:20px;
+  width:100%;
+  background: #b1b1b1;
+  transform: .5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+
+ul li a:hover {
+  transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
+  box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+}
+
+ul li:hover .fa {
+  color:#fff;
+}
+
+ul li:hover span {
+  color:#fff;
+}
+
+ul li:hover:nth-child(1) a{
+  background: #3b5998;
+}
+ul li:hover:nth-child(1) a:before{
+  background: #365492;
+}
+ul li:hover:nth-child(1) a:after{
+  background: #4a69ad;
+}
+
+ul li:hover:nth-child(2) a{
+  background: #00aced;
+}
+ul li:hover:nth-child(2) a:before{
+  background: #097aa5;
+}
+ul li:hover:nth-child(2) a:after{
+  background: #53b9e0;
+}
+
+ul li:hover:nth-child(3) a{
+  background: #dd4b39;
+}
+ul li:hover:nth-child(3) a:before{
+  background: #b33a2b;
+}
+ul li:hover:nth-child(3) a:after{
+  background: #e66a5a;
+}
+
+ul li:hover:nth-child(4) a{
+  background: #e4405f;
+}
+ul li:hover:nth-child(4) a:before{
+  background: #d81c3f;
+}
+ul li:hover:nth-child(4) a:after{
+  background: #e46880;
+}
+
+
+
+
+
+
+
+
+
+
+
 
