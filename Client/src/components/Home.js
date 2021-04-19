@@ -3,14 +3,14 @@ import Header from './Header'
 import MenuX from './MenuX'
 import Item from './Item';
 import './Home.css';
-import Accessories from '../assets/Desktop-Accessories.jpeg';
-import ModelX from '../assets/Desktop-ModelX.jpeg';
 
-import Model3 from '../assets/Desktop-Model3.jpeg';
-import ModelY from '../assets/Desktop-ModelY.jpeg';
-import SolarPanels from '../assets/Desktop-SolarPanels.jpeg';
-import SolarRoof from '../assets/Desktop-SolarRoof.jpeg';
+import One  from '../assets/1.jpg';
+import Two  from '../assets/2.jpg';
+import Plant  from '../assets/Plant.jpg';
+
 import Sonabags from '../assets/Sonabags.jpg';
+
+import Sonabags2 from '../assets/Sonabags2.jpg';
 
 
 const Home = () => {
@@ -21,28 +21,30 @@ const Home = () => {
         <div className="app_itemsContainer">
             {/*To understand all these attributes inside of Item refer to the long ass comment in Item.js */}
             <Item
-            title='ModelX'
-            desc='ModelX Description'
+            title='WELCOME'
+            desc=''
             descLink=''
-            backgroundImg={Sonabags}
-            leftBtnTxt='ModelX'
+            backgroundImg={One}
+            leftBtnText='Explore More'
             leftBtnLink=''
             rightBtnText='ModelX'
             rightBtnLink=''
-            twoButtons='true'
+            
             first
             />
 
             <Item 
-            title='Accessories'
-            desc='Accessories Description'
+            title='Plant'
+            desc='Our plant is spread across 100 acres of land in
+
+            Bijauri, a strategic location at Dang that ensures easy availability of high-grade limestone.'
             descLink=''
-            backgroundImg={Accessories}
-            leftBtnTxt='Accessories'
+            backgroundImg={Two}
+            leftBtnText='Accessories'
             leftBtnLink=''
             rightBtnText='Accessories'
             rightBtnLink=''
-            twoButtons='true'
+            
             
             />
 
@@ -51,12 +53,12 @@ const Home = () => {
             title='ModelS'
             desc='ModelS Description'
             descLink=''
-            backgroundImg={ModelX}
-            leftBtnTxt='ModelS'
+            backgroundImg={Sonabags}
+            leftBtnText='ModelS'
             leftBtnLink=''
             rightBtnText='ModelS'
             rightBtnLink=''
-            twoButtons='true'
+            
             
             />
 
@@ -64,12 +66,12 @@ const Home = () => {
             title='Model3'
             desc='Model3 Description'
             descLink=''
-            backgroundImg={Model3}
-            leftBtnTxt='Model3'
+            backgroundImg={Sonabags2}
+            leftBtnText='Model3'
             leftBtnLink=''
             rightBtnText='Model3'
             rightBtnLink=''
-            twoButtons='true'
+            
             
             />
 
@@ -77,12 +79,12 @@ const Home = () => {
             title='ModelY'
             desc='ModelY Description'
             descLink=''
-            backgroundImg={ModelY}
-            leftBtnTxt='ModelY'
+            backgroundImg={Two}
+            leftBtnText='ModelY'
             leftBtnLink=''
             rightBtnText='ModelY'
             rightBtnLink=''
-            twoButtons='true'
+            
             
             />
 
@@ -90,20 +92,20 @@ const Home = () => {
             title='SolarPanels'
             desc='SolarPanels Description'
             descLink=''
-            backgroundImg={SolarPanels}
-            leftBtnTxt='SolarPanels'
+            backgroundImg={Plant}
+            leftBtnText='SolarPanels'
             leftBtnLink=''
             rightBtnText='SolarPanels'
             rightBtnLink=''
-            twoButtons='true'
+            
             />
 
             <Item
             title='SolarRoof'
             desc='SolarRoof Description'
             descLink=''
-            backgroundImg={SolarRoof}
-            leftBtnTxt='SolarRoof'
+            backgroundImg={Plant}
+            leftBtnText='SolarRoof'
             leftBtnLink=''
             rightBtnText='SolarRoof'
             rightBtnLink=''

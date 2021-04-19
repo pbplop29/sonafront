@@ -1,9 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 
 
@@ -107,16 +107,18 @@ body {
           transform: skewX(18deg) scale(0.95);
 }
 .skw-page__heading {
-  font-family:'wire one', serif;
+  font-family: 'Oswald', sans-serif;
   margin-bottom: 15px;
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 2rem;
   text-align: center;
+  color: white;
 }
 .skw-page__description {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
-  font-family:'Raleway', serif;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
 }
 .skw-page__link {
   color: #FFA0A0;
@@ -125,45 +127,52 @@ body {
  background-image: url("../assets/Sonabags.jpg");
 }
 .skw-page-1 .skw-page__half--right .skw-page__content {
-background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
+background-color: #f9484a;
+background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
 }
 .skw-page-2 .skw-page__half--left .skw-page__content {
-background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
+background-color: #f9484a;
+background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
 }
 .skw-page-2 .skw-page__half--right .skw-page__content {
- background-image: url("../assets//Desktop-ModelX.jpeg");
+ background-image: url("../assets/Plant.jpg");
 }
 .skw-page-3 .skw-page__half--left .skw-page__content {
- background-image: url("../assets/Desktop-ModelS.jpeg");
+ background-image: url("../assets/Production-Capacity.jpg");
 }
 .skw-page-3 .skw-page__half--right .skw-page__content {
-background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
+background-color: #f9484a;
+background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
 }
 .skw-page-4 .skw-page__half--left .skw-page__content {
-background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
+background-color: #f9484a;
+background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
 }
 .skw-page-4 .skw-page__half--right .skw-page__content {
- background-image: url("../assets/Desktop-ModelY.jpeg");
+ background-image: url("../assets/Mine.jpg");
 }
 .skw-page-5 .skw-page__half--left .skw-page__content {
- background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/img-test.jpg");
+ background-image: url("../assets/Market.jpg");
 }
 .skw-page-5 .skw-page__half--right .skw-page__content {
-background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
+background-color: #f9484a;
+background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
 }
 
 .skw-page-6 .skw-page__half--left .skw-page__content {
-  background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
+  background-color: #f9484a;
+background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
   }
   .skw-page-6 .skw-page__half--right .skw-page__content {
-  background-image: url("../assets/Desktop-ModelY.jpeg");
+  background-image: url("../assets/Location.PNG");
   }
 
   .skw-page-7 .skw-page__half--left .skw-page__content {
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/img-test.jpg");
+    background-image: url("../assets/Social.jpg");
    }
    .skw-page-7 .skw-page__half--right .skw-page__content {
-   background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403, red);
+   background-color: #f9484a;
+background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
    }
 
 
@@ -188,9 +197,9 @@ background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03, 
 
 
 .colour-block {
-  background:#FFB603;
+  background:#FB933A;
   width:100%;
-  padding:7% 20% 10% 20%;
+  padding:7% 20% 20% 20%;
   color:#fff;
   border-style: none!important;
 }
@@ -198,7 +207,7 @@ background: linear-gradient(135deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03, 
   background:#fff;
   width:100%;
   padding:7% 20% 10% 20%;
-  color:#FFB603;
+  color:#FB933A;
   border-style: none!important;
 }
 h1 {
@@ -225,7 +234,7 @@ h1 {
   height:100px;
   position:absolute;
   left:0px;
-  background: linear-gradient(to right bottom, #FFB603 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+  background: linear-gradient(to right bottom, #FB933A 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
   border-style: none!important;
 }
 
@@ -238,11 +247,18 @@ h1 {
   height:100px;
   position:absolute;
   left:0px;
-  background: linear-gradient(to left bottom, #fff 49%, #FFB603 50%);
+  background: linear-gradient(to left bottom, #fff 49%, #FB933A 50%);
   border-style: none!important;
 }
 
-
+.skew-ccc{
+  width:100%;
+  height:100px;
+  position:absolute;
+  left:0px;
+  background: linear-gradient(to left bottom, #FB933A 49%, #fff 50%);
+  border-style: none!important;
+}
 
 
 
@@ -283,16 +299,16 @@ h1 {
 
 @media(max-width: 1240px){
   .skw-page__heading {
-    font-family:'wire one', serif;
+    font-family: 'Oswald', sans-serif;
     margin-bottom: 15px;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-align: center;
   }
   .skw-page__description {
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: center;
-    font-family:'Raleway', serif;
+    font-family: 'Josefin Sans', sans-serif;
   }
   
   }
@@ -348,7 +364,7 @@ ul li a {
   display:absolute;
   display:block;
   width:210px;
-  height:80px;
+  height:70px;
   background: #fff;
   text-align:left;
   padding-left: 20px;

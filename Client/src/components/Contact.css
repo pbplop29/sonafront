@@ -7,7 +7,8 @@ section{
     width: 100%;
     height: 100vh;
     
-    background: linear-gradient(-30deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403);
+    background-color: #f9484a;
+background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
     overflow:hidden;
 }
 

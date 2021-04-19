@@ -3,7 +3,7 @@ import Header from './Header'
 import MenuX from './MenuX'
 import React from "react";
 import $ from"jquery";
-import sonaLogoGif from '../assets/Sona-logo-gif.gif'
+
 import './About.css'
 
 
@@ -84,6 +84,7 @@ const About = () =>
         <div class="skw-page__content">
           <h2 class="skw-page__heading">Profile </h2>
           <p class="skw-page__description">Sonapur Minerals And Oil Limited (Formerly Sonapur Minerals And Oil Private Limited) is registered in the Office of Company Registrar vide Registration No. 239081/64/065 on 13th June, 2008. The registered office and its corporate office is located at Battisputali-9, Kathmandu and its manufacturing unit is located at Tulsipur-18, Dang, a strategic location at Dang that ensures easy availability of high-grade limestone. The company deals in manufacturing and sales of cement and clinker. The company has obtained approval from Department of Industries for manufacture and sales of Ordinary Portland Cement (OPC), Portland Pozzolana Cement (PPC), Portland Slag Cement (PSC) and Clinker. Presently the company is selling OPC and PPC Cement in the market with its brand/trademark of "Sona Cement OPC" and "Sona Shree PPC Cement" and "Sonatech PPC Cement".  Sona Cement is a established brand in the western and far-western market and hence the majority of the sales of the company is concentrated at Western and Far-Western region of the country.</p>
+          <h2 class="skw-page__heading">Scroll Down </h2>
         </div>
       </div>
     </div>
@@ -336,6 +337,7 @@ Email : info@sonacement.com<br></br>
     
   </div>
 </div>
+
 
 
 
