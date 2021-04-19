@@ -11,9 +11,9 @@
 .product__body{
     display: flex;
     flex-direction: column;
-    
+    position: relative;
     align-items: center;
-    min-height: 100vh;
+    min-height: 200vh;
     background: linear-gradient(-30deg,#FFDF01, #FDD901, #FFCF00, #FDC300, #FFBA03,  #FFB403);
 }
 
@@ -108,6 +108,48 @@ background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+
     clip-path: circle(400px at center);
 }
 
+
+
+
+
+.card .circle3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.card .circle3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #8A2387;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+
+.card:hover .circle3::before,.card:active .circle3::before{
+    background: #AAAAAA;
+    clip-path: circle(400px at center);
+}
+
+.card:hover .circle3::before,.card:active .circle3::before{
+    background: #AAAAAA;
+    clip-path: circle(400px at center);
+}
+
+
 .card img{
     position: absolute;
     top: 50%;
@@ -157,6 +199,24 @@ height: 500px;
     
     position: relative;
     color: white;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.1rem;
+    
+}
+
+.card .content .product__title3{
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card .content .product__desc3{
+    
+    position: relative;
+    color: black;
     font-family: 'Josefin Slab', serif;
     font-size: 1.1rem;
     
