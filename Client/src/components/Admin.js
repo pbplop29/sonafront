@@ -12,7 +12,6 @@ import{
   Link,
   Switch
 } from "react-router-dom";
-import { slide as SlideMenu } from 'react-burger-menu';
 
 class Admin extends React.Component{
 
@@ -112,52 +111,19 @@ class AdminPanel extends React.Component{
   render(){
     return(
       <div className="parent-con">
-        <div>
-          <SlideMenu>
-            <Link to={'/admin'}>Dashboard</Link>
-            <Link to={'/admin/gallery'}>Gallery</Link>
-            <Link to={'/admin/email'}>Email</Link>
-            <Link to={'/admin/about'}>About</Link>
-            <a onClick={() => this.props.logout()}>Logout</a>
-          </SlideMenu>
-        </div>
-        <div className="sidebar">
-          <ProSidebar collapsed = {false} collapsedWidth="50px">
-            <Menu iconShape="square">
-              <div className="except-logout">
-              <MenuItem>
-                Dashboard
-      	        <Link to={'/admin'} />
-              </MenuItem>
-      	      <MenuItem>
-                Gallery
-                <Link to={'/admin/gallery'} />
-              </MenuItem>
-              <MenuItem>
-                Email
-                <Link to={'/admin/email'} />
-              </MenuItem>
-              <MenuItem>
-                About
-                <Link to={'/admin/about'} />
-              </MenuItem>
-              </div>
-              <div className="logout">
-                <MenuItem>
-                  Logout
-                  <a onClick={() => this.props.logout()} />
-                </MenuItem>
-              </div>
-            </Menu>
-          </ProSidebar>
-        </div>
+      	 <Link to={'/admin'}>Dashboard</Link><br/>
+         <Link to={'/admin/gallery'}>Gallery</Link><br/>
+         <Link to={'/admin/email'}>Email</Link><br/>
+         <Link to={'/admin/about'}>About</Link><br/>
+         <Link to={'/admin/notification'}>Notification</Link><br/>
+         <a href="" onClick={() => this.props.logout()}>Logout</a>
         <div className="other_stuff">
           <Switch>
             <Route exact path={'/admin'}>
               <DashboardPanel />
             </Route>
             <Route path={'/admin/gallery'}>
-              <GalleryPanel />
+              <GalleryPanel /> 
             </Route>
             <Route path={'/admin/email'}>
               <EmailPanel />
@@ -165,15 +131,82 @@ class AdminPanel extends React.Component{
             <Route path={'/admin/about'}>
               <AboutPanel />
             </Route>
+            <Route path={'/admin/notification'}>
+              <NotificationPanel />
+            </Route>
             <Route path={'*'}>
               <h1> NO ROUTE </h1>
             </Route>
           </Switch>
-        </div>
+        </div> 
+      </div>
+    ) 
+  } 
+} 
+
+var notice_stream; 
+
+class NotificationPanel extends React.Component{
+
+  constructor(props){
+    super(props);
+    this.state = {text: '', notification: 3};
+  }
+
+  componentDidMount(){
+    notice_stream = firebase.firestore().collection("stuff").doc("stuff for website").onSnapshot((doc) => {
+      if(doc.data()["Notice"]){
+	this.setState({text: doc.data()["Notice"], notification: doc.data()["Notification"]});
+      }
+    });
+  }
+
+  onsubmit = (event) => {
+    event.preventDefault();
+    firebase.firestore().collection("stuff").doc("stuff for website").update({
+      Notice: this.state.text
+    }).catch((error) => {
+      console.log(error);
+    });
+  }
+
+  handleChange = (event) => {
+    this.setState({[event.target.name]: event.target.value});
+  }
+
+  notificationtoggle = () => {
+    var noti_value;
+    if(this.state.notification == 1){
+      noti_value = 0;
+    }
+    else{
+      noti_value = 1;
+    }
+    console.log(noti_value);
+    firebase.firestore().collection("stuff").doc("stuff for website").update({
+      Notification: noti_value
+    }).catch((error) => {
+      console.log(error);
+    });
+  }
+
+  render(){
+    return(
+      <div>
+      <form onSubmit={this.onsubmit}>
+        <textarea name="text" value={this.state.text} onChange={this.handleChange} rows={15} cols={50}/>
+        <input type="submit" value="Edit"/>
+      </form>
+      <button onClick={this.notificationtoggle}>Turn notice on/off</button>
+      {this.state.notification == 1 &&
+	<div>Notice is not up on the website</div>
+      }
+      {this.state.notification == 0 &&
+	 <div>Notice is up on the website</div>
+      }
       </div>
     )
   }
-
 }
 
 class AboutPanel extends React.Component{

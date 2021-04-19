@@ -29,7 +29,7 @@ app.post('/sendemail', (req, res) => {
            Email: ${data.email}<br>
            Contact: ${data.contactNumber}<br>
            Address: ${data.address}<br>
-           Estimated Transaction: ${data.estimatedTransaction}` 
+           Subject: ${data.estimatedTransaction}` 
   }
   smtpTransport.sendMail(mailOptions, (error, response)=>{
     if(error){

@@ -9,16 +9,29 @@ import Two  from '../assets/2.jpg';
 import Plant  from '../assets/Plant.jpg';
 
 import Sonabags from '../assets/Sonabags.jpg';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+import './Home.css';
 
 import Sonabags2 from '../assets/Sonabags2.jpg';
 
+const Home = ({_notice, _RemoveNotice, text}) => {
 
-const Home = () => {
     return (
-        <div className="App">
-            <MenuX />
-                <Header />
-        <div className="app_itemsContainer">
+      <div className="App">
+      <div>
+        <Popup open={_notice} onClose={_RemoveNotice} modal>
+	  <div className="modal">
+            <button className="close" onClick={_RemoveNotice}>&times;</button>
+            <div className="content"> 
+              {text}
+            </div>
+	  </div>
+        </Popup> 
+      </div>
+      <MenuX />
+       <Header />
+      <div className="app_itemsContainer">
             {/*To understand all these attributes inside of Item refer to the long ass comment in Item.js */}
             <Item
             title='WELCOME'

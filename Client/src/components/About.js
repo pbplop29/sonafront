@@ -303,13 +303,13 @@ Email : info@sonacement.com<br></br>
 
 <ul>
   <li>
-    <a href="#">
+    <a href="https://www.facebook.com/sonacement/" target="_blank">
       <i class="fa fa-facebook" aria-hidden="true"></i>
       <span> - Facebook</span>
     </a>
   </li>
   <li>
-    <a href="#">
+    <a href="https://twitter.com/sonacement" target="_blank">
       <i class="fa fa-twitter" aria-hidden="true"></i>
       <span> - Twitter</span>
     </a>

@@ -1,49 +1,4 @@
 
-
-.parent-con{
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  position: relative;
-}
-
-.sidebar{
-  height: 100%;
-  position: absolute;
-}
-
-.test{
-  top: 0;
-  left: 0px;
-  height: 100%;
-  width: 600px;
-  position: absolute;
-  background-color: blue;
-}
-
-.other_stuff{
-  position: absolute;
-  left: 700px;
-}
-
-.logout{
-  position: absolute;
-  bottom: 10px;
-  font-weight: bold;
-}
-
-.except-logout{
-  position: absolute;
-  top: 10px;
-  font-weight: bold;
-}
-
-@media(max-width: 1024px){
-  .sidebar{
-    display: none;
-  }
-}
-
 section{
     position: relative;
     width: 100%;
