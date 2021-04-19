@@ -180,6 +180,10 @@ class NotificationPanel extends React.Component{
     });
   }
 
+  componentWillUnmount(){
+    notice_stream();
+  }
+
   onsubmit = (event) => {
     event.preventDefault();
     firebase.firestore().collection("stuff").doc("stuff for website").update({
