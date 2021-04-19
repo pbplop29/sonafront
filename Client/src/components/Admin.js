@@ -448,12 +448,20 @@ class GalleryPanel extends React.Component{
 
   render(){
     return(
-      <div>
-        <br/>
+      <div className='admin__gallery__body'>
+        <div className="empty__space__gallery__admin"></div>
+        <div className="submit_portion">
         <form onSubmit={this.uploadimage}>
-          <input type="file" accept=".jpg, .jpeg, .png" ref={this.fileInput} multiple/><br/><br/>
+          
+          <input  type="file" accept=".jpg, .jpeg, .png" ref={this.fileInput} multiple/>
+          
+          <div className="button__del">
           <button type="submit">Upload</button>
+          </div>
         </form>
+        <br></br>
+        </div>
+        <div className="gallery__admin__image__dad">
         {
 	this.state.uploading &&
 	<progress></progress>
@@ -462,11 +470,20 @@ class GalleryPanel extends React.Component{
         {
   	  this.state.image_urls.map((url) =>
 	    <div>
-	      <img src={url[1]}/><br/>
-	      <button onClick={() => this.deleteimage(url[0])}>Delete</button>
-	    </div>
+        <div className="gallery__admin__image">
+        
+	      <img src={url[1]}/>
+        
+        <div className="button__del">
+	      <button onClick={() => this.deleteimage(url[0])}>Delete</button></div><br></br>
+        </div>
+        </div>
+	    
 	  )
         }
+
+</div>
+
       </div>
     )
   }
