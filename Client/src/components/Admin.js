@@ -1,10 +1,11 @@
+import { slide as Menu } from 'react-burger-menu'
 import React from 'react'
 import './Admin.css'
 import Header from './Header'
 import MenuX from './MenuX'
 import firebase from "firebase";
 import {v4 as uuidv4} from 'uuid';
-import { ProSidebar, SidebarHeader, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+
 import 'react-pro-sidebar/dist/css/styles.css';
 import './AdminSidebar.scss';
 import{
@@ -12,7 +13,7 @@ import{
   Link,
   Switch
 } from "react-router-dom";
-
+import sonaLogoGif from '../assets/Sona-logo-gif.gif'
 class Admin extends React.Component{
 
   constructor(props){
@@ -110,13 +111,31 @@ class AdminPanel extends React.Component{
 
   render(){
     return(
+
+
+      
       <div className="parent-con">
-      	 <Link to={'/admin'}>Dashboard</Link><br/>
-         <Link to={'/admin/gallery'}>Gallery</Link><br/>
-         <Link to={'/admin/email'}>Email</Link><br/>
-         <Link to={'/admin/about'}>About</Link><br/>
-         <Link to={'/admin/notification'}>Notification</Link><br/>
-         <a href="" onClick={() => this.props.logout()}>Logout</a>
+
+
+<div>
+                {/* "right" pulls the menu from the right, put "left" if you want otherwise. "disableAutoFocus" prevents from automatic focus of the first menu item.*/}
+    <Menu right disableAutoFocus> 
+    {/* All the menu items. */}
+    <Link to={'/admin'}>Dashboard</Link>
+    <Link to={'/admin/gallery'}>Gallery</Link>
+    <Link to={'/admin/email'}>Email</Link>
+    <Link to={'/admin/about'}>About</Link>
+    <Link to={'/admin/notification'}>Notification</Link>
+    <a href="" onClick={() => this.props.logout()}>Logout</a>
+
+    <div className="image">
+    <img src={sonaLogoGif} alt="" />
+    </div>
+    
+    
+    </Menu>
+            </div>
+    
         <div className="other_stuff">
           <Switch>
             <Route exact path={'/admin'}>
@@ -193,17 +212,47 @@ class NotificationPanel extends React.Component{
   render(){
     return(
       <div>
+        <section>
+          <div className="container__dad">
+            <div className="container">
+            <div class="content">
+            <div className="email__title">
+              Please enter the notice you want to display
+            </div>
+            <div class="user-details">
+
+
+
+
       <form onSubmit={this.onsubmit}>
         <textarea name="text" value={this.state.text} onChange={this.handleChange} rows={15} cols={50}/>
+        <div className="button">
         <input type="submit" value="Edit"/>
+        </div>
       </form>
-      <button onClick={this.notificationtoggle}>Turn notice on/off</button>
+      <div className="button__del">
+      <button onClick={this.notificationtoggle}>Notice on/off</button>
+      </div>
       {this.state.notification == 1 &&
-	<div>Notice is not up on the website</div>
+	<div className='notice__off'>Notice is not up on the website</div>
       }
       {this.state.notification == 0 &&
-	 <div>Notice is up on the website</div>
+	 <div className='notice__on'>Notice is up on the website</div>
       }
+
+      </div>
+          </div>
+          </div>
+          </div>
+          
+
+
+
+
+
+
+
+      </section>
       </div>
     )
   }
@@ -224,8 +273,40 @@ class DashboardPanel extends React.Component{
   render(){
     return(
       <div>
-        <br/>
-        <h1>HELLO</h1>
+        <section>
+          <div className="container__dad">
+            <div className="container">
+          <div className="dashboard__content">
+          <div className='dashboard__title'>Introduction to Admin Panel</div>
+          <div className="dashboard__intro__text">This is a panel exclusively for the moderator of the webiste.<br></br>
+          This panel will help you change different items displayed on the website for all other users.
+          You can customize emails, descriptions, notification, all from here. <br></br>Click on the menu icon on the top left to open the respective drawers.
+          </div>
+          </div>
+          </div>
+          </div>
+        <div className="wave wave1"></div>
+            <div className="wave wave2"></div>
+            <div className="wave wave3"></div>
+            <div className="wave wave4"></div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     )
   }
@@ -270,19 +351,43 @@ class EmailPanel extends React.Component{
   render(){
     return(
       <div>
-        <br/>
-        <form onSubmit={this.addemail}>
-          <input type="email"  placeholder="Email here"/>
-          <button type="submit">Add</button>
+        <section>
+        <div className="container__dad">
+          <div className="container">
+          <div class="content">
+            <div className="email__title">
+              Please enter the Email Address You want to Add.
+            </div>
+            <div class="user-details">
+          <form onSubmit={this.addemail}>
+            <div className="input-box">
+          <input  type="email"  placeholder="Email here"/>
+          </div>
+          
+          <div class="button">
+                                <input type="submit" value="ADD"></input>
+                                </div>
         </form>
         {
 	  this.state.emails.map((email) =>
 	    <div>
-	      <h1> {email} </h1>
-	      <button onClick={() => this.deleteemail(email)}> Delete email </button>
+	      <h1 className='title'> {email} </h1>
+        <div className="button__del">
+	      <button onClick={() => this.deleteemail(email)}> Delete Email </button>
+        </div>
 	    </div>
 	  )
         }<br/>
+
+</div>
+          </div>
+        </div>
+        </div>
+        <div className="wave wave1"></div>
+            <div className="wave wave2"></div>
+            <div className="wave wave3"></div>
+            <div className="wave wave4"></div>
+        </section>
       </div>
     )
   }

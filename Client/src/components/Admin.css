@@ -257,3 +257,106 @@ form .user-details .input-box{
     
 
 } 
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Josefin+Slab:wght@600&display=swap');
+
+
+
+.dashboard__contet{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dashboard__title{
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.email__title{
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 0.5rem;
+}
+.dashboard__intro__text{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-family:'Raleway', serif;
+}
+
+
+.dashboard__title::after{
+    
+    content:'';
+    display: block;
+    width: 100;
+    height: 5px;
+    background-color: #f9484a;
+background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
+
+}
+
+
+.email__title::after{
+    content:'';
+    display: block;
+    width: 100;
+    height: 5px;
+    background-color: #f9484a;
+background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
+}
+
+.content{
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 15px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    
+}
+
+.input-box input:focus,
+.input-box input:valid{
+    border-color: #FF9A00;
+}
+
+.button__del button{
+    height: 100%;
+    width:10rem;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #FF0000
+}
+
+.button__del{
+    height: 2.8125rem;
+    margin: 1rem 0;
+}
+
+
+
+.notice__on{
+    color:green;
+}
+
+.notice__off{
+    color:red;
+}
