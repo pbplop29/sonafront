@@ -451,6 +451,9 @@ class GalleryPanel extends React.Component{
       <div className='admin__gallery__body'>
         <div className="empty__space__gallery__admin"></div>
         <div className="submit_portion">
+        <div className="email__title">
+              Please upload the images below.
+            </div>
         <form onSubmit={this.uploadimage}>
           
           <input  type="file" accept=".jpg, .jpeg, .png" ref={this.fileInput} multiple/>
