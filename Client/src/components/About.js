@@ -200,32 +200,35 @@ Email : info@sonacement.com<br></br>
           <p class="skw-page__description">
             
 
-<ul>
+
+          <ul>
   <li>
-    <a href="#">
+    <a href="https://www.facebook.com/sonacement/" target="_blank">
       <i class="fa fa-facebook" aria-hidden="true"></i>
       <span> - Facebook</span>
     </a>
   </li>
   <li>
-    <a href="#">
+    <a href="https://twitter.com/sonacement" target="_blank">
       <i class="fa fa-twitter" aria-hidden="true"></i>
       <span> - Twitter</span>
     </a>
   </li>
   <li>
-    <a href="#">
+    <a href="/contact">
       <i class="fa fa-google-plus" aria-hidden="true"></i>
       <span> - Google</span>
     </a>
   </li>
   <li>
-    <a href="#">
+    <a href="https://www.instagram.com/sonacement/" target="_blank">
       <i class="fa fa-instagram" aria-hidden="true"></i>
       <span> - Instagram</span>
     </a>
   </li>
 </ul>
+
+
 
             </p>
         </div>
@@ -315,13 +318,13 @@ Email : info@sonacement.com<br></br>
     </a>
   </li>
   <li>
-    <a href="#">
+    <a href="/contact">
       <i class="fa fa-google-plus" aria-hidden="true"></i>
       <span> - Google</span>
     </a>
   </li>
   <li>
-    <a href="#">
+    <a href="https://www.instagram.com/sonacement/" target="_blank">
       <i class="fa fa-instagram" aria-hidden="true"></i>
       <span> - Instagram</span>
     </a>
