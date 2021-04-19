@@ -1,15 +1,13 @@
-
 import './App.css';
-
 import Contact from './components/Contact';
-
 import Home from './components/Home';
 import GalleryX from './components/GalleryX';
 import News from './components/News';
 import About from './components/About';
 import Admin from './components/Admin';
 import Products from './components/Products';
-
+import {useState, useEffect } from 'react';
+import firebase from "firebase";
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,7 +15,32 @@ import {
   Link
 } from "react-router-dom";
 
+var noti_stream;
+
 function App() {
+
+  const [notice, setNotice] = useState(false);
+  const [notice_text, setText] = useState("");
+
+  useEffect(() => {
+    noti_stream = firebase.firestore().collection("stuff").doc("stuff for website").onSnapshot((doc) => {
+      if(doc.data()["Notification"] == 0){
+	setText(doc.data()["Notice"]);
+	setNotice(true);
+      }
+      else{
+	setNotice(false);
+      }
+    });
+    return () => {
+      noti_stream();
+    }
+  }, []);
+
+  function RemoveNotice(){
+    setNotice(false);
+  }
+
   return (
       <Router>
         <div>
@@ -25,7 +48,11 @@ function App() {
               {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
             <Route exact path="/">
-              <Home />
+              <Home 
+              _notice = {notice}
+              _RemoveNotice = {RemoveNotice}
+              text = {notice_text}
+              />
             </Route>
             <Route path="/about">
               <About />
@@ -46,7 +73,11 @@ function App() {
               <Admin />
             </Route>
             <Route path="/home">
-              <Home />
+              <Home 
+                _notice = {notice}
+                _RemoveNotice = {RemoveNotice}
+                text = {notice_text}
+              />
             </Route>
             <Route path="*">
               <h1> NO ROUTE </h1>

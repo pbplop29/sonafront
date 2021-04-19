@@ -11,8 +11,9 @@ const Contact = () => {
     const [captchapassed, setCaptcha] = useState(false);
 
     async function submit(event){
-    event.preventDefault();
-    if(captchapassed){
+      event.preventDefault();
+      if(captchapassed){
+	alert("Your inquiry has been sent.");
 	var field = await firebase.firestore().collection("stuff").doc("stuff for website").get(); //Getting the array of email addresses from firebase.
 	axios.post('/sendemail', 
 	  {emails: field.data()["emails"],
