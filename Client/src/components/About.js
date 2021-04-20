@@ -1,10 +1,12 @@
-
 import Header from './Header'
 import MenuX from './MenuX'
 import React from "react";
 import $ from"jquery";
-
 import './About.css'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import markerIconPng from "leaflet/dist/images/marker-icon.png"
+import "leaflet/dist/leaflet.css"
+import {Icon} from 'leaflet'
 
 
 $(document).ready(function() {
@@ -179,7 +181,22 @@ Email : info@sonacement.com<br></br>
       <div class="skw-page__half skw-page__half--right">
         <div class="skw-page__skewed">
           <div class="skw-page__content">
-            
+           <MapContainer center={[28.168748955638076, 84.15217561727529]} zoom={7} scrollWheelZoom={false}>
+	     <TileLayer
+	       attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+	     />
+	     <Marker position={[28.092311967162953, 82.37917510277657]} icon={new Icon({iconUrl: markerIconPng, iconSize:[25, 41], iconAnchor: [12, 41]})}>
+	       <Popup>
+	         Factory
+	       </Popup>
+	     </Marker>
+	     <Marker position={[27.70358656052731, 85.34063111430639]} icon={new Icon({iconUrl: markerIconPng, iconSize:[25, 41], iconAnchor: [12, 41]})}>
+	       <Popup>
+	         Head Office
+	       </Popup>
+	     </Marker>
+	   </MapContainer> 
           </div>
         </div>
       </div>
