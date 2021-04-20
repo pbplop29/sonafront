@@ -14,7 +14,16 @@ import{
   Switch
 } from "react-router-dom";
 import sonaLogoGif from '../assets/Sona-logo-gif.gif'
+
+
+
+
+
+
 class Admin extends React.Component{
+
+
+
 
   constructor(props){
     super(props);
@@ -284,7 +293,7 @@ class DashboardPanel extends React.Component{
           <div className='dashboard__title'>Introduction to Admin Panel</div>
           <div className="dashboard__intro__text">This is a panel exclusively for the moderator of the webiste.<br></br>
           This panel will help you change different items displayed on the website for all other users.
-          You can customize emails, descriptions, notification, all from here. <br></br>Click on the menu icon on the top left to open the respective drawers.
+          You can customize emails, descriptions, notification, all from here. <br></br><br></br>Click on the menu icon on the top left to open the respective drawers.
           </div>
           </div>
           </div>
@@ -462,14 +471,15 @@ class GalleryPanel extends React.Component{
           <button type="submit">Upload</button>
           </div>
         </form>
-        <br></br>
-        </div>
-        <div className="gallery__admin__image__dad">
         {
 	this.state.uploading &&
 	<progress></progress>
         }
-        <br/>
+        
+        <br></br>
+        </div>
+        <div className="gallery__admin__image__dad">
+        
         {
   	  this.state.image_urls.map((url) =>
 	    <div>

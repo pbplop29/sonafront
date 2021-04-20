@@ -68,9 +68,7 @@ function App() {
             <Route path="/gallery">
               <GalleryX />
             </Route>
-            <Route path="/news">
-              <News />
-            </Route>
+            
             <Route path ='/contact'>
               <Contact />
             </Route>

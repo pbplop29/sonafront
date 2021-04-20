@@ -18,7 +18,7 @@
 }
 
 .header__center {
-  flex: 1;
+  flex: 0.85;
   display: flex;
   justify-content: center;
 }
@@ -57,6 +57,7 @@
 .header__right > p {
   margin: 1rem;
   text-transform: uppercase;
+  display: flex;
 }
 
 .header__right > p > a {

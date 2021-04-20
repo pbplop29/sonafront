@@ -23,18 +23,12 @@ const Header = () => {
                 <p> <Link to={'/about'}>About Us</Link></p>
                 <p> <Link to='/products'>Products</Link></p>
                 <p><Link to={'/gallery'}>Gallery</Link></p>
-                <p><Link to={'/news'}>News</Link></p>
+                
                 <p> <Link to='/contact'>Contact Us</Link></p>
                 
             </div>
 
 
-            <div className="header__right">
-            <div className="menu__icon">
-                
-                </div>
-                
-            </div>
             
             
 

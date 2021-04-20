@@ -18,7 +18,7 @@ import{
     <Link to={'/about'}>About Us</Link>
     <Link to={'/products'}>Products</Link>
     <Link to={'/gallery'}>Gallery</Link>
-    <Link to={'/news'}>News</Link>
+    
     <Link to={'/contact'}>Contact Us</Link>
     
     <Link to={'/'}>
