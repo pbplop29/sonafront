@@ -181,7 +181,7 @@ Email : info@sonacement.com<br></br>
       <div class="skw-page__half skw-page__half--right">
         <div class="skw-page__skewed">
           <div class="skw-page__content">
-           <MapContainer center={[28.168748955638076, 84.15217561727529]} zoom={7} scrollWheelZoom={false}>
+           <MapContainer center={[28.168748955638076, 83.6]} zoom={7} scrollWheelZoom={false}>
 	     <TileLayer
 	       attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
