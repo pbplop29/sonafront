@@ -232,7 +232,7 @@ h1 {
 .map__mobile {
   border: 2px solid #fb933a;
   margin-top: 1rem;
-  height: 150%;
+  height: 120%;
   width: 100%;
   position: absolute;
   z-index: 1;
