@@ -3,7 +3,7 @@ import Header from './Header'
 import './Contact.css' 
 import firebase from "firebase"
 import axios from 'axios'
-import MenuX from './MenuX'
+import MenuX from './MenuX' 
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {

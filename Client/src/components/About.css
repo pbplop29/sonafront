@@ -1,21 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400");
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-
-
-
-*, *:before, *:after {
- box-sizing: border-box;
- margin: 0;
- padding: 0;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
- background: #ffffff;
- font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 .skw-pages {
@@ -42,16 +41,16 @@ body {
 .skw-page__half--left {
   left: 0;
   -webkit-transform: translate3d(-32.4vh, 100%, 0);
-          transform: translate3d(-32.4vh, 100%, 0);
+  transform: translate3d(-32.4vh, 100%, 0);
 }
 .skw-page__half--right {
   left: 50%;
   -webkit-transform: translate3d(32.4vh, -100%, 0);
-          transform: translate3d(32.4vh, -100%, 0);
+  transform: translate3d(32.4vh, -100%, 0);
 }
 .skw-page.active .skw-page__half {
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 .skw-page__skewed {
   overflow: hidden;
@@ -60,7 +59,7 @@ body {
   width: 140%;
   height: 100%;
   -webkit-transform: skewX(-18deg);
-          transform: skewX(-18deg);
+  transform: skewX(-18deg);
   background: #000;
 }
 .skw-page__half--left .skw-page__skewed {
@@ -70,7 +69,6 @@ body {
   right: -40%;
 }
 .skw-page__content {
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +81,7 @@ body {
   padding: 0 30%;
   color: #fff;
   -webkit-transform: skewX(18deg);
-          transform: skewX(18deg);
+  transform: skewX(18deg);
   transition: opacity 1s, -webkit-transform 1s;
   transition: transform 1s, opacity 1s;
   transition: transform 1s, opacity 1s, -webkit-transform 1s;
@@ -93,21 +91,26 @@ body {
   padding-left: 30%;
   padding-right: 30%;
   -webkit-transform-origin: 100% 0;
-          transform-origin: 100% 0;
+  transform-origin: 100% 0;
 }
 .skw-page__half--right .skw-page__content {
   padding-left: 30%;
   padding-right: 30%;
   -webkit-transform-origin: 0 100%;
-          transform-origin: 0 100%;
+  transform-origin: 0 100%;
 }
 .skw-page.inactive .skw-page__content {
   opacity: 0.5;
   -webkit-transform: skewX(18deg) scale(0.95);
-          transform: skewX(18deg) scale(0.95);
+  transform: skewX(18deg) scale(0.95);
 }
 .skw-page__heading {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
   margin-bottom: 15px;
   text-transform: uppercase;
   font-size: 2rem;
@@ -117,174 +120,170 @@ body {
 .skw-page__description {
   font-size: 16px;
   text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: white;
 }
 .skw-page__link {
-  color: #FFA0A0;
+  color: #ffa0a0;
 }
 .skw-page-1 .skw-page__half--left .skw-page__content {
- background-image: url("../assets/Sonabags.jpg");
+  background-image: url("../assets/Sonabags.jpg");
 }
 .skw-page-1 .skw-page__half--right .skw-page__content {
-background-color: #f9484a;
-background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
+  background-color: #f9484a;
+  background-image: linear-gradient(315deg, #f9484a 0%, #faa735 74%);
 }
 .skw-page-2 .skw-page__half--left .skw-page__content {
-background-color: #f9484a;
-background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
+  background-color: #f9484a;
+  background-image: linear-gradient(315deg, #f9484a 0%, #faa735 74%);
 }
 .skw-page-2 .skw-page__half--right .skw-page__content {
- background-image: url("../assets/Plant.jpg");
+  background-image: url("../assets/Plant.jpg");
 }
 .skw-page-3 .skw-page__half--left .skw-page__content {
- background-image: url("../assets/Production-Capacity.jpg");
+  background-image: url("../assets/Production-Capacity.jpg");
 }
 .skw-page-3 .skw-page__half--right .skw-page__content {
-background-color: #f9484a;
-background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
+  background-color: #f9484a;
+  background-image: linear-gradient(315deg, #f9484a 0%, #faa735 74%);
 }
 .skw-page-4 .skw-page__half--left .skw-page__content {
-background-color: #f9484a;
-background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
+  background-color: #f9484a;
+  background-image: linear-gradient(315deg, #f9484a 0%, #faa735 74%);
 }
 .skw-page-4 .skw-page__half--right .skw-page__content {
- background-image: url("../assets/Mine.jpg");
+  background-image: url("../assets/Mine.jpg");
 }
 .skw-page-5 .skw-page__half--left .skw-page__content {
- background-image: url("../assets/Market.jpg");
+  background-image: url("../assets/Market.jpg");
 }
 .skw-page-5 .skw-page__half--right .skw-page__content {
-background-color: #f9484a;
-background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
+  background-color: #f9484a;
+  background-image: linear-gradient(315deg, #f9484a 0%, #faa735 74%);
 }
 
 .skw-page-6 .skw-page__half--left .skw-page__content {
   background-color: #f9484a;
-background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
-  }
-  .skw-page-6 .skw-page__half--right .skw-page__content {
-   
-  }
-
-
-
-  .map{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-  }
-
-
-
-  .skw-page-7 .skw-page__half--left .skw-page__content {
-    background-image: url("../assets/Social.jpg");
-   }
-   .skw-page-7 .skw-page__half--right .skw-page__content {
-   background-color: #f9484a;
-background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
-   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.mobile__screen{
-  display:none;
-  
+  background-image: linear-gradient(315deg, #f9484a 0%, #faa735 74%);
 }
 
+.map {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 
+.skw-page-7 .skw-page__half--left .skw-page__content {
+  background-image: url("../assets/Social.jpg");
+}
+.skw-page-7 .skw-page__half--right .skw-page__content {
+  background-color: #f9484a;
+  background-image: linear-gradient(315deg, #f9484a 0%, #faa735 74%);
+}
+
+.mobile__screen {
+  display: none;
+}
 
 .colour-block {
-  background:#FB933A;
-  width:100%;
-  padding:7% 20% 20% 20%;
-  color:#fff;
-  border-style: none!important;
+  background: #fb933a;
+  width: 100%;
+  padding: 7% 20% 20% 20%;
+  color: #fff;
+  border-style: none !important;
 }
 .white-block {
-  background:#fff;
-  width:100%;
-  padding:7% 20% 10% 20%;
-  color:#FB933A;
-  border-style: none!important;
+  background: #fff;
+  width: 100%;
+  padding: 7% 20% 10% 20%;
+  color: #fb933a;
+  border-style: none !important;
 }
 h1 {
-  text-align:justify;
-  font-size:75px;
-  font-family:'wire one', serif;
-  font-weight:normal;
-  margin-block-start: 0.80em;
-    margin-block-end: 0.3em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  text-align: justify;
+  font-size: 75px;
+  font-family: "wire one", serif;
+  font-weight: normal;
+  margin-block-start: 0.8em;
+  margin-block-end: 0.3em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 .mobile__details {
-  font-size:15px;
-  font-family:'Raleway', serif;
+  font-size: 15px;
+  font-family: "Raleway", serif;
 }
 
+.white-block__location {
+  background: #fff;
+  width: 100%;
+  padding: 7% 8% 5% 5%;
+  color: #fb933a;
+  border-style: none !important;
+  height: 38rem;
+}
 
+.mobile__details__location {
+  font-size: 15px;
+  font-family: "Raleway", serif;
+  position: relative;
+  padding-bottom: 200px;
+}
+.map__mobile {
+  border: 2px solid #fb933a;
+  margin-top: 1rem;
+  height: 150%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
 /*------------------*/
 /*  SKEW CLOCKWISE  */
 /*------------------*/
-.skew-cc{
-  width:100%;
-  height:100px;
-  position:absolute;
-  left:0px;
-  background: linear-gradient(to right bottom, #FB933A 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
-  border-style: none!important;
+.skew-cc {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  background: linear-gradient(to right bottom, #fb933a 49%, #fff 50%),
+    linear-gradient(-50deg, #ffffff 16px, #000 0);
+  border-style: none !important;
 }
-
 
 /*-------------------------*/
 /* SKEW COUNTER CLOCKWISE  */
 /*-------------------------*/
-.skew-c{
-  width:100%;
-  height:100px;
-  position:absolute;
-  left:0px;
-  background: linear-gradient(to left bottom, #fff 49%, #FB933A 50%);
-  border-style: none!important;
+.skew-c {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  background: linear-gradient(to left bottom, #fff 49%, #fb933a 50%);
+  border-style: none !important;
 }
 
-.skew-ccc{
-  width:100%;
-  height:100px;
-  position:absolute;
-  left:0px;
-  background: linear-gradient(to left bottom, #FB933A 49%, #fff 50%);
-  border-style: none!important;
+.skew-ccc {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  background: linear-gradient(to left bottom, #fb933a 49%, #fff 50%);
+  border-style: none !important;
 }
 
-@media(max-width: 1024px){
-.pc__screen{
-  display:none;
+@media (max-width: 1024px) {
+  .pc__screen {
+    display: none;
+  }
+
+  .mobile__screen {
+    display: block;
+  }
 }
 
-.mobile__screen{
-  display: block;
-}
-
-}
-
-
-@media(max-width: 1240px){
+@media (max-width: 1240px) {
   .skw-page__heading {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     margin-bottom: 15px;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -293,147 +292,126 @@ h1 {
   .skw-page__description {
     font-size: 0.9rem;
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
   }
-  
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 ul {
-  
-  display:flex;
+  display: flex;
   flex-direction: column;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   align-items: center;
 }
 
 ul li {
-  list-style:none;
-  margin:1rem;
+  list-style: none;
+  margin: 1rem;
 }
 
 ul li a .fa {
   font-size: 30px;
   color: #262626;
-  line-height:50px;
-  transition: .5s;
+  line-height: 50px;
+  transition: 0.5s;
   padding-right: 14px;
 }
 
 ul li a span {
-  padding:0;
-  margin:0;
-  position:absolute;
+  padding: 0;
+  margin: 0;
+  position: absolute;
   top: 30px;
   color: #262626;
   letter-spacing: 4px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 ul li a {
   text-decoration: none;
-  display:absolute;
-  display:block;
-  width:210px;
-  height:70px;
+  display: absolute;
+  display: block;
+  width: 210px;
+  height: 70px;
   background: #fff;
-  text-align:left;
+  text-align: left;
   padding-left: 20px;
-  transform: rotate(-30deg) skew(25deg) translate(0,0);
-  transition:.5s;
-  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+  transform: rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: 0.5s;
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
 }
 ul li a:before {
-  content: '';
+  content: "";
   position: absolute;
-  top:10px;
-  left:-20px;
-  height:100%;
-  width:20px;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
   background: #b1b1b1;
-  transform: .5s;
+  transform: 0.5s;
   transform: rotate(0deg) skewY(-45deg);
 }
 ul li a:after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom:-20px;
-  left:-10px;
-  height:20px;
-  width:100%;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
   background: #b1b1b1;
-  transform: .5s;
+  transform: 0.5s;
   transform: rotate(0deg) skewX(-45deg);
 }
 
 ul li a:hover {
-  transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
-  box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+  transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
 }
 
 ul li:hover .fa {
-  color:#fff;
+  color: #fff;
 }
 
 ul li:hover span {
-  color:#fff;
+  color: #fff;
 }
 
-ul li:hover:nth-child(1) a{
+ul li:hover:nth-child(1) a {
   background: #3b5998;
 }
-ul li:hover:nth-child(1) a:before{
+ul li:hover:nth-child(1) a:before {
   background: #365492;
 }
-ul li:hover:nth-child(1) a:after{
+ul li:hover:nth-child(1) a:after {
   background: #4a69ad;
 }
 
-ul li:hover:nth-child(2) a{
+ul li:hover:nth-child(2) a {
   background: #00aced;
 }
-ul li:hover:nth-child(2) a:before{
+ul li:hover:nth-child(2) a:before {
   background: #097aa5;
 }
-ul li:hover:nth-child(2) a:after{
+ul li:hover:nth-child(2) a:after {
   background: #53b9e0;
 }
 
-ul li:hover:nth-child(3) a{
+ul li:hover:nth-child(3) a {
   background: #dd4b39;
 }
-ul li:hover:nth-child(3) a:before{
+ul li:hover:nth-child(3) a:before {
   background: #b33a2b;
 }
-ul li:hover:nth-child(3) a:after{
+ul li:hover:nth-child(3) a:after {
   background: #e66a5a;
 }
 
-ul li:hover:nth-child(4) a{
+ul li:hover:nth-child(4) a {
   background: #e4405f;
 }
-ul li:hover:nth-child(4) a:before{
+ul li:hover:nth-child(4) a:before {
   background: #d81c3f;
 }
-ul li:hover:nth-child(4) a:after{
+ul li:hover:nth-child(4) a:after {
   background: #e46880;
 }
-
-
-
-
-
