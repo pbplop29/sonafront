@@ -181,14 +181,14 @@ Email : info@sonacement.com<br></br>
       <div class="skw-page__half skw-page__half--right">
         <div class="skw-page__skewed">
           <div class="skw-page__content">
-           <MapContainer center={[28.168748955638076, 83.6]} zoom={7} scrollWheelZoom={false}>
+           <MapContainer className="map" center={[28.168748955638076, 86.3]} zoom={7} scrollWheelZoom={true}>
 	     <TileLayer
-	       attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-	       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-	     />
+	       attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+               url='https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png'
+              />
 	     <Marker position={[28.092311967162953, 82.37917510277657]} icon={new Icon({iconUrl: markerIconPng, iconSize:[25, 41], iconAnchor: [12, 41]})}>
-	       <Popup>
-	         Factory
+	       <Popup> 
+                 Factory
 	       </Popup>
 	     </Marker>
 	     <Marker position={[27.70358656052731, 85.34063111430639]} icon={new Icon({iconUrl: markerIconPng, iconSize:[25, 41], iconAnchor: [12, 41]})}>
@@ -306,7 +306,7 @@ Bijauri-1,Dang,Nepal<br></br>
 Phone: +977 82 530182<br></br>
 Po. Box No. 20499<br></br>
 Email : info@sonacement.com<br></br>
-  </div>
+    </div>
 </div>
 
 

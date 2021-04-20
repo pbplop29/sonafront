@@ -8,6 +8,7 @@ import Admin from './components/Admin';
 import Products from './components/Products';
 import {useState, useEffect } from 'react';
 import firebase from "firebase";
+import {Helmet} from "react-helmet";
 import {
   BrowserRouter as Router,
   Switch,
@@ -42,6 +43,10 @@ function App() {
   }
 
   return (
+      <div>
+      <Helmet>
+       <title>Sonapur Ltd.</title> 
+      </Helmet>
       <Router>
         <div>
           <Switch>
@@ -85,6 +90,7 @@ function App() {
           </Switch>
         </div>
       </Router>
+      </div>
     );
 
 }

@@ -165,14 +165,10 @@ background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
   }
   .skw-page-6 .skw-page__half--right .skw-page__content {
   }
-
-  .leaflet-container{
-    position: relative;
-    left: -350px;
+  .map{
     height: 100%;
-    width: 1000px;
+    width: 100%;
   }
-
 
   .skw-page-7 .skw-page__half--left .skw-page__content {
     background-image: url("../assets/Social.jpg");
