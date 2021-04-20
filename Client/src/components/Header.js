@@ -12,7 +12,9 @@ const Header = () => {
 
             <div className="header__bg"></div>
             <div className = 'header__logo'>
-                <img src={Sonalogoborder} alt="Tesla Logo"/>
+                <a href="/"><img href='/home' src={Sonalogoborder} alt="Tesla Logo"/></a>
+            
+                
             </div>
 
 

@@ -1,98 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+.header {
+  display: flex;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100vw;
+  height: 5rem;
 
-.header{
-    display: flex;
-    background:rgba(0,0,0, 0.3);
-    position:fixed;
-    width:100vw;
-    height: 5rem;
-    
-    
-    z-index: 100;
-    border-radius: 2px;
+  z-index: 100;
+  border-radius: 2px;
 }
 
+.header__logo > a > img {
+  max-height: 200px;
+  max-width: 200px;
+  margin-top: 0.5rem;
+}
 
-.header__logo>img{
+.header__center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header__center > p {
+  margin: 1rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header__center > p > a {
+  text-decoration: none;
+  color: black;
+  font-family: "Unica One", cursive;
+  font-size: 1.5rem;
+}
+
+.header__center > p > a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.3s;
+}
+
+.header__center > p > a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+.header__right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__right > p {
+  margin: 1rem;
+  text-transform: uppercase;
+}
+
+.header__right > p > a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  .header__center {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__logo > a > img {
     max-height: 200px;
     max-width: 200px;
     margin-top: 0.5rem;
+  }
 }
-
-.header__center{
-    flex:1;
-    display:flex;
-    justify-content: center;
-    
-}
-
-
-.header__center>p{
-    margin:1rem;
-    margin-top: 2rem;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.header__center>p>a{
-    
-    text-decoration: none;
-    color:black;
-    font-family: 'Unica One', cursive;
-    font-size: 1.5rem;
-    
-}
-
-.header__center>p>a::after{
-    
-    content:'';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: black;
-    transition: width .3s;
-}
-
-
-.header__center>p>a:hover::after{
-    width: 100%;
-    transition: width .3s;
-}
-.header__right{
-    display: flex;
-    justify-content: flex-end;
-    
-}
-
-.header__right>p{
-    margin:1rem;
-    text-transform: uppercase;
-}
-
-.header__right>p>a{
-    margin-left:1rem;
-    text-decoration: none;
-    color:black;
-}
-
-
-    
-@media(max-width: 1024px){
-    .header__center{
-        display: none;
-    }
-    
-    }
-    
-
-
-
-    
-    @media(max-width: 600px){
-        .header__logo>img{
-            max-height: 200px;
-            max-width: 200px;
-            margin-top: 0.5rem;
-        }
-        
-        }
