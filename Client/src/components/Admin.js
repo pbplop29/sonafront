@@ -473,7 +473,7 @@ class GalleryPanel extends React.Component{
         </form>
         {
 	this.state.uploading &&
-	<progress></progress>
+  <div class="circle__progress"></div>
         }
         
         <br></br>
