@@ -164,11 +164,18 @@ background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
 background-image: linear-gradient(315deg, #f9484a 0%, #FAA735 74%);
   }
   .skw-page-6 .skw-page__half--right .skw-page__content {
+   
   }
+
+
+
   .map{
     height: 100%;
     width: 100%;
+    position: absolute;
   }
+
+
 
   .skw-page-7 .skw-page__half--left .skw-page__content {
     background-image: url("../assets/Social.jpg");
@@ -425,13 +432,6 @@ ul li:hover:nth-child(4) a:before{
 ul li:hover:nth-child(4) a:after{
   background: #e46880;
 }
-
-
-
-
-
-
-
 
 
 
