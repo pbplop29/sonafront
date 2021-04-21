@@ -1,4 +1,4 @@
-.modal{
+.modal {
   background-color: #f9484a;
   background-image: linear-gradient(315deg, #f9484a 50%, #fbd72b 99%);
 }
@@ -23,4 +23,226 @@
   color: white;
   overflow-wrap: break-word;
   font-size: 1.5rem;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn {
+  border: 1.5px solid #fff;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: black;
+  font-weight: bolder;
+  background-color: white;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 290px;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.sky {
+  background: url("../assets/banner1.png") no-repeat;
+  background-size: cover;
+  transform: translateZ(-600px) scale(3.1);
+  z-index: 1;
+}
+
+.people2 {
+  background: url("../assets/people2.png") no-repeat center;
+  background-size: cover;
+  transform: translateZ(-125px) scale(1.4167);
+  z-index: 5;
+}
+
+.people3 {
+  background: url("../assets/people4.png") repeat center;
+  background-size: cover;
+  transform: translateZ(0) scale(1);
+  z-index: 6;
+}
+
+.hero-text {
+  background-size: cover;
+
+  transform: translateZ(0) scale(1);
+  z-index: 7;
+}
+
+.hero-text h2 {
+  font-size: 1.25rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 2.5rem;
+}
+
+.hero-text ul {
+  font-size: 0.75rem;
+  position: absolute;
+  right: 2.5rem;
+  top: 2.5rem;
+}
+
+.hero-text ul li {
+  margin-left: 2.5rem;
+  list-style-type: none;
+  float: left;
+  visibility: hidden;
+}
+
+.hero-text ul li:nth-of-type(3) {
+  visibility: visible;
+}
+
+.social-container {
+  position: absolute;
+  left: 2.5rem;
+  bottom: 2.5rem;
+}
+
+.social-container i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  transition: 1s;
+}
+.social-container i:hover {
+  font-size: 2.2rem;
+  margin-right: 1rem;
+  color: #d64623;
+  transition: 1s;
+}
+
+.info-container {
+  background-color: #000000;
+  background-image: linear-gradient(210deg, #000000 50%, #f5d406 130%);
+  transform: translateZ(0) scale(1);
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.info-container img {
+  width: 75%;
+  margin-bottom: 2.5rem;
+  filter: saturate(0.65);
+  border: solid 2px #ff9a00;
+  border-radius: 2rem;
+}
+
+.info-container h2 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 2rem;
+}
+.info-container p {
+  font-family: "Josefin Slab", serif;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.text-container p:nth-of-type(1) {
+  font-family: "Josefin Slab", serif;
+  font-size: 1rem;
+  margin: 1rem 2.5rem;
+}
+
+.text-container p:nth-of-type(2) {
+  font-family: "Josefin Slab", serif;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 760px) {
+  .hero-text ul li {
+    visibility: visible;
+  }
+
+  .info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+    align-items: center;
+    text-align: left;
+  }
+
+  .info-container img {
+    justify-self: end;
+    width: 75%;
+  }
+
+  .text-container p:nth-of-type(1) {
+    font-size: 1rem;
+    width: 75%;
+    margin: 1rem 0;
+  }
+
+  .text-container p:nth-of-type(1) {
+    font-size: 0.86rem;
+  }
+}
+
+@media (min-width: 1126px) {
+  .sky,
+  .bushes,
+  .water,
+  .people1,
+  .people2,
+  .people3,
+  .hero-text {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 1126px) {
+  .sky {
+    background: url("../assets/banner1.png") no-repeat center;
+    background-size: cover;
+    transform: translateZ(-600px) scale(3.1);
+    z-index: 1;
+  }
 }
