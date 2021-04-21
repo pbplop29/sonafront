@@ -32,7 +32,7 @@
 .header__center > p > a {
   text-decoration: none;
   color: black;
-  font-family: "Unica One", cursive;
+  font-family: "Unica One";
   font-size: 1.5rem;
 }
 

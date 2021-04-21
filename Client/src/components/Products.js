@@ -5,6 +5,10 @@ import React from 'react'
 import sonasac from '../assets/sonasac.png'
 import sonasac2 from '../assets/sonasac2.png'
 import Clinker from '../assets/Clinker.png'
+
+
+import Fade from 'react-reveal/Fade';
+
 const Products = () => {
     return (
         <div>
@@ -20,7 +24,7 @@ const Products = () => {
             
 
 
-
+            <Fade bottom>
             <div className="card">
                 <div className="circle2">
                     <div className="content">
@@ -36,10 +40,11 @@ const Products = () => {
                 </div>
                 <img src={sonasac2} alt=""/>
             </div>
+            </Fade>
 
 
 
-
+            <Fade bottom>
             <div className="card">
                 <div className="circle">
                     <div className="content">
@@ -54,9 +59,9 @@ const Products = () => {
                 </div>
                 <img src={sonasac} alt=""/>
             </div>
-            
+            </Fade>
 
-
+            <Fade bottom>
             <div className="card">
                 <div className="circle3">
                     <div className="content">
@@ -73,7 +78,7 @@ const Products = () => {
                 </div>
                 <img src={Clinker} alt=""/>
             </div>
-
+            </Fade>
 
 
 

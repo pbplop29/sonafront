@@ -1,8 +1,9 @@
 import './App.css';
 import Contact from './components/Contact';
 import Home from './components/Home';
+
 import GalleryX from './components/GalleryX';
-import News from './components/News';
+
 import About from './components/About';
 import Admin from './components/Admin';
 import Products from './components/Products';
@@ -53,7 +54,7 @@ function App() {
               {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
             <Route exact path="/">
-              <Home 
+              <Home
               _notice = {notice}
               _RemoveNotice = {RemoveNotice}
               text = {notice_text}
