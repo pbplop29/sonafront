@@ -15,15 +15,7 @@ import{
 } from "react-router-dom";
 import sonaLogoGif from '../assets/Sona-logo-gif.gif'
 
-
-
-
-
-
 class Admin extends React.Component{
-
-
-
 
   constructor(props){
     super(props);
@@ -133,7 +125,6 @@ class AdminPanel extends React.Component{
     <Link to={'/admin'}>Dashboard</Link>
     <Link to={'/admin/gallery'}>Gallery</Link>
     <Link to={'/admin/email'}>Email</Link>
-    <Link to={'/admin/about'}>About</Link>
     <Link to={'/admin/notification'}>Notification</Link>
     <a href="" onClick={() => this.props.logout()}>Logout</a>
 
@@ -155,9 +146,6 @@ class AdminPanel extends React.Component{
             </Route>
             <Route path={'/admin/email'}>
               <EmailPanel />
-            </Route>
-            <Route path={'/admin/about'}>
-              <AboutPanel />
             </Route>
             <Route path={'/admin/notification'}>
               <NotificationPanel />
@@ -271,17 +259,6 @@ class NotificationPanel extends React.Component{
   }
 }
 
-class AboutPanel extends React.Component{
-  render(){
-    return(
-      <div>
-        <br/>
-        <h1>ABOUT</h1>
-      </div>
-    )
-  }
-}
-
 class DashboardPanel extends React.Component{
   render(){
     return(
@@ -369,7 +346,7 @@ class EmailPanel extends React.Component{
           <div className="container">
           <div class="content">
             <div className="email__title">
-              Please enter the Email Address You want to Add.
+              These emails will receive "Contact Us" forms. Enter the email address you want to add and click the "Add" button.
             </div>
             <div class="user-details">
           <form onSubmit={this.addemail}>
@@ -461,7 +438,7 @@ class GalleryPanel extends React.Component{
         <div className="empty__space__gallery__admin"></div>
         <div className="submit_portion">
         <div className="email__title">
-              Please upload the images below.
+            Upload images for "Gallery" here.
             </div>
         <form onSubmit={this.uploadimage}>
           
