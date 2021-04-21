@@ -2,7 +2,8 @@ import React from 'react'
 import Button from './Button';
 import './Item.css' 
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
-
+import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 
 const Item = ({title, desc, backgroundImg, leftBtnText, leftBtnLink,  rightBtnText, rightBtnLink,  twoButtons, first}) => {
     return (
@@ -20,17 +21,17 @@ const Item = ({title, desc, backgroundImg, leftBtnText, leftBtnLink,  rightBtnTe
             
 
 
-
+            
             <div className="item__text">
-                <p>{title}</p>
+            <Flip bottom><p>{title}</p></Flip>
                 <div className="item__text__detail">
-                    <p>{desc}</p>
+                <Flip bottom><p>{desc}</p></Flip>
                 </div>
             </div>
-
+            
             
 
-
+            <Fade bottom>
             <div className="item__bottom">
                 <div className="item__buttons">
                     <Button text={leftBtnText} link={leftBtnLink} />
@@ -43,6 +44,7 @@ const Item = ({title, desc, backgroundImg, leftBtnText, leftBtnLink,  rightBtnTe
                     </div>
                 )}
             </div>
+            </Fade>
 
 
             </div>
