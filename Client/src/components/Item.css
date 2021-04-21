@@ -1,90 +1,87 @@
-*{
-    
-    scroll-snap-type: y proximity;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+
+* {
+  scroll-snap-type: y proximity;
 }
 
-.item{
-    height:100vh;
-    width:100vw;
-    max-width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display:flex;
-    justify-content: center;
-    scroll-snap-align: start;
+.item {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  scroll-snap-align: start;
 }
 
-.item__container{
-    width:70vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.item__container {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.item__text{
-    margin-top: 8%;
-    display: flex;
-    flex-direction: column;
-    font-size:2rem;
-    color: black;
-    align-items: center;
-    flex:1;
-    font-family: 'Oswald', sans-serif;
+.item__text {
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  color: black;
+  align-items: center;
+  flex: 1;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  color: white;
 }
 
-.item__text__detail{
-    font-weight:200;
-    font-size:1rem;
-    text-align: center;
+.item__text__detail {
+  font-weight: 200;
+  font-size: 1rem;
+  text-align: center;
 }
 
-.item__bottom{
+.item__bottom {
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.item__buttons {
+  display: flex;
+}
+
+.item__expand {
+  margin-top: 3%;
+  justify-content: center;
+  margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .item__bottom {
     margin-bottom: 5%;
     display: flex;
     flex-direction: column;
-    max-width:100%;
-}
+    max-width: 100%;
+  }
 
-.item__buttons{
+  .item__buttons {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.item__expand{
-
-margin-top: 3%;
-justify-content: center;
-margin:auto;
+@media (max-width: 900px) {
+  .item__text {
+    margin-top: 15%;
+  }
 }
 
-
-    
-@media(max-width: 1024px){
-    .item__bottom{
-        margin-bottom: 5%;
-        display: flex;
-        flex-direction: column;
-        max-width:100%;
-    }
-    
-    .item__buttons{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media(max-width: 900px){
-    .item__text{
-        margin-top: 15%;
-    }
-}
-
-
-
-
-@media(max-width: 600px){
-    .item__text{
-        margin-top: 30%;
-    }
+@media (max-width: 600px) {
+  .item__text {
+    margin-top: 35%;
+  }
 }
