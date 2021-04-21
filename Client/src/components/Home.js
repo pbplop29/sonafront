@@ -9,6 +9,7 @@ import Two  from '../assets/2.jpg';
 import Plant  from '../assets/Plant.jpg';
 
 import Sonabags from '../assets/Sonabags.jpg';
+import Profile from '../assets/Profile.jpg';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import './Home.css';
@@ -37,7 +38,7 @@ const Home = ({_notice, _RemoveNotice, text}) => {
             title='WELCOME'
             desc=''
             descLink=''
-            backgroundImg={One}
+            backgroundImg={Sonabags}
             leftBtnText='Explore More'
             leftBtnLink=''
             rightBtnText='ModelX'
@@ -52,7 +53,7 @@ const Home = ({_notice, _RemoveNotice, text}) => {
 
             Bijauri, a strategic location at Dang that ensures easy availability of high-grade limestone.'
             descLink=''
-            backgroundImg={Two}
+            backgroundImg={Plant}
             leftBtnText='Accessories'
             leftBtnLink=''
             rightBtnText='Accessories'

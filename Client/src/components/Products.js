@@ -2,8 +2,8 @@ import './Product.css'
 import Header from './Header'
 import MenuX from './MenuX'
 import React from 'react'
-import sonasac from '../assets/sonasac.png'
-import sonasac2 from '../assets/sonasac2.png'
+import sonasac3 from '../assets/sonasac3.png'
+import sonasac4 from '../assets/sonasac4.png'
 import Clinker from '../assets/Clinker.png'
 
 
@@ -38,7 +38,7 @@ const Products = () => {
                     </div>
                     
                 </div>
-                <img src={sonasac2} alt=""/>
+                <img src={sonasac4} alt=""/>
             </div>
             </Fade>
 
@@ -57,7 +57,7 @@ const Products = () => {
                     </div>
                     
                 </div>
-                <img src={sonasac} alt=""/>
+                <img src={sonasac3} alt=""/>
             </div>
             </Fade>
 
