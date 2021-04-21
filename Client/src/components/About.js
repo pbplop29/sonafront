@@ -4,7 +4,8 @@ import React from "react";
 import $ from"jquery";
 import './About.css'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import marker from "../assets/marker.png";
+import factory from "../assets/Factory.png";
+import office from "../assets/office_marker.png";
 import "leaflet/dist/leaflet.css"
 import {Icon} from 'leaflet'
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
@@ -220,12 +221,12 @@ Email : info@sonacement.com<br></br>
 	      attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
               url='https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png'
               />
-	    <Marker position={[28.092311967162953, 82.37917510277657]} icon={new Icon({iconUrl: marker, iconSize:[37, 41], iconAnchor: [12, 41]})}>
+	    <Marker position={[28.092311967162953, 82.37917510277657]} icon={new Icon({iconUrl: factory, iconSize:[40, 44], iconAnchor: [12, 41]})}>
 	      <Popup> 
                 Factory
 	      </Popup>
 	    </Marker>
-	    <Marker position={[27.70358656052731, 85.34063111430639]} icon={new Icon({iconUrl: marker, iconSize:[37, 41], iconAnchor: [12, 41]})}>
+	    <Marker position={[27.70358656052731, 85.34063111430639]} icon={new Icon({iconUrl: office, iconSize:[41, 41], iconAnchor: [12, 41]})}>
 	      <Popup>
 	        Head Office
 	      </Popup>
@@ -351,12 +352,12 @@ Email : info@sonacement.com<br></br>
 	      attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
               url='https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png'
               />
-	    <Marker position={[28.092311967162953, 82.37917510277657]} icon={new Icon({iconUrl: marker, iconSize:[37, 41], iconAnchor: [12, 41]})}>
+	    <Marker position={[28.092311967162953, 82.37917510277657]} icon={new Icon({iconUrl: factory, iconSize:[37, 41], iconAnchor: [12, 41]})}>
 	      <Popup> 
                 Factory
 	      </Popup>
 	    </Marker>
-	    <Marker position={[27.70358656052731, 85.34063111430639]} icon={new Icon({iconUrl: marker, iconSize:[37, 41], iconAnchor: [12, 41]})}>
+	    <Marker position={[27.70358656052731, 85.34063111430639]} icon={new Icon({iconUrl: office, iconSize:[38, 38], iconAnchor: [12, 41]})}>
 	      <Popup>
 	        Head Office
 	      </Popup>
