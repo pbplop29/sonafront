@@ -104,7 +104,11 @@ a {
 
 .hero-text {
   background-size: cover;
-
+  background: linear-gradient(
+    rgba(105, 211, 252, 0.4) 0%,
+    rgba(245, 212, 6, 0.2) 40%,
+    rgba(1, 0, 0, 0.25) 80%
+  );
   transform: translateZ(0) scale(1);
   z-index: 7;
 }
