@@ -9,6 +9,7 @@ import "leaflet/dist/leaflet.css"
 import {Icon} from 'leaflet'
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import Fade from 'react-reveal/Fade';
 
 $(document).ready(function() {
 
@@ -307,35 +308,49 @@ Email : info@sonacement.com<br></br>
 
 <div class="skew-c"></div>
 <div class="colour-block">
+<Fade bottom>
   <h1>Profile</h1>
   <div className='mobile__details'>Sonapur Minerals And Oil Limited (Formerly Sonapur Minerals And Oil Private Limited) is registered in the Office of Company Registrar vide Registration No. 239081/64/065 on 13th June, 2008. The registered office and its corporate office is located at Battisputali-9, Kathmandu and its manufacturing unit is located at Tulsipur-18, Dang, a strategic location at Dang that ensures easy availability of high-grade limestone. The company deals in manufacturing and sales of cement and clinker. The company has obtained approval from Department of Industries for manufacture and sales of Ordinary Portland Cement (OPC), Portland Pozzolana Cement (PPC), Portland Slag Cement (PSC) and Clinker. Presently the company is selling OPC and PPC Cement in the market with its brand/trademark of "Sona Cement OPC" and "Sona Shree PPC Cement" and "Sonatech PPC Cement".  Sona Cement is a established brand in the western and far-western market and hence the majority of the sales of the company is concentrated at Western and Far-Western region of the country.</div>
+  </Fade>
 </div>
 <div class="skew-cc"></div> 
 <div class="white-block">
+<Fade bottom>
+          
+        
   <h1>Achievements</h1>
   <div className='mobile__details'>The company begun its commercial production from F/Y 2068-69 with intital Manufacturing Capacity of 400 TPD of Cement and 750 TPD of Clinker. The company has nearly completed 9 years of its operation since the commencement of production. The plant setup was begun in FY 2065-66 and it took nearly 3 years to complete the setup and commence the production. The cost of Capital Expenditure for Plant setup was financed through Consortium Financing lead by Prime Commercial Bank on October 13, 2009. The industry thereafter successful completed its first expansion project leading to production capacity of   1000 TPD of Cement and 1000 TPD of Clinker in FY 2073-74. Thereafter the second expansion of the production capacity was initiated in FY 2074-75. After the completion of the second expansion the Production Capacity of Cement will be 1700 TPD of Cement and 1500 TPD of Clinker. The second expansion is under progress and expected to complete before Falgun, 2078.   </div>
+  </Fade>
 </div>
 <div class="skew-c"></div>
 <div class="colour-block">
+<Fade bottom>
   <h1>Production Capacity</h1>
   <div className='mobile__details'>There has been continuous increase in demand for cement in last ten years and now the domestic production is able to fulfill the current demand of the market reducing the imports of cement/clinker. In the last 9 years the products of Sonapur Minerals & Oil P. Ltd. have been emerged as an established brand due to the quality and strength of its products and its marketing strategies. Considering the brand value given to our products and demand of our products, we were continuously engaged in the expansion of our production capacity since last nine years. Our prediction of what capacity to be setup or increased was on the basis of vision of our promoters. Our promoter's vision was how much we can sell that much production capacity we should have.</div>
+  </Fade>
 </div>
+
 <div class="skew-cc"></div> 
 <div class="white-block">
+<Fade bottom>
   <h1>Mines</h1>
   <div className='mobile__details'>The main USP (Unique Selling Point) of the products of Sonapur Minerals & Oil P. Ltd. is the quality of limestone that we have in our mines. The presence of High Grade Limestone in our mines is the main factor that makes our products different than others and the quality/strength of cement/clinker depends upon the quality of the limestone used in to manufacture it. The MgO content which is the major factor for determining the quality of limestone ranges from 1.79% to 3.16%. Lower the MgO, more the strength of clinker and cement. The limestone reserve in our mines is sufficient to serve the purpose of the company with the enhanced production after completion of second expansion. One of our mines is located at Dubidanda, Rolpa and another is located at Dubing, Rolpa. The distance of one of our mines is just 42 kilometre from our factory site and another is just 16 kilometre from our factory site and hence limestone becomes available in our factory at lowest cost possible. Due to the quality of our limestone, we are also selling clinker to other grinding units in the country and out of total sales the portion of clinker sales ranges from 40 to 48%. </div>
+  </Fade>
 </div>
 
 <div class="skew-c"></div>
 <div class="colour-block">
+<Fade bottom>
   <h1>Marketing Network</h1>
   <div className='mobile__details'>The majority of the sales of the company is concentrated at Western and Far-Western region of the country. We are having transaction with approximate 900 customers as on date with more than 60 dealers. Our majority of the customers are located at Banke, Dang, Kailali, Surkhet, Bardiya, Rolpa, Rukum, Salyan, Mahendranagar and Kanchanpur. We have more than 150 customers located in Banke and 200 customers in Dang District as these are the nearest location to our factory. </div>
+  </Fade>
 </div>
 
 
 
 <div class="skew-cc"></div> 
 <div class="white-block__location">
+<Fade bottom>
 <h1>Location</h1>
   <div className='mobile__details'>
   Address: Sonapur Minerals & Oil Pvt. Ltd.<br></br>
@@ -363,11 +378,13 @@ Email : info@sonacement.com<br></br>
 	    </Marker>
 	  </MapContainer>
     </div>
+    </Fade>
 </div>
 
 
 <div class="skew-c"></div>
 <div class="colour-block">
+<Fade bottom>
 <h1>Socials</h1>
   <div className='mobile__details'>
 
@@ -412,6 +429,7 @@ Email : info@sonacement.com<br></br>
 
     
   </div>
+  </Fade>
 </div>
 
 
