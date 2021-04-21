@@ -118,19 +118,10 @@ a {
 }
 
 @media (min-width: 1024px) {
-  .bm-burger-button {
-    position: fixed;
-    right: 30px;
-    top: 25px;
-    width: 25px;
-    height: 25px;
-    float: right;
+  #sidebar{
     display: none;
   }
-
-  /* Color/shape of burger icon bars */
-  .bm-burger-bars {
-    background: black;
+  .burger{
     display: none;
   }
 }
