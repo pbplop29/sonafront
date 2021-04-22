@@ -10,8 +10,15 @@ import banner1 from '../assets/banner1.jpg';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import './Home.css';
+import $ from 'jquery';
 
 
+
+$(function() {
+  setTimeout(function() { $("#hideDiv").fadeOut(1500); }, 6000)
+  
+  })
+  
 
 const Home = ({_notice, _RemoveNotice, text}) => {
 
@@ -42,16 +49,32 @@ const Home = ({_notice, _RemoveNotice, text}) => {
         
       
         
-        <div class="parallax__layer people2"></div>
+        
         <div class="parallax__layer people3"></div>
         <div class="parallax__layer hero-text">
         
-          
-          <div class="year-container">
-            
-          
-            
+        <div class="year-container">
+            <h1 id='hideDiv' >
+              <div className="box__down">
+              <span></span>
+              <span></span>
+              <span></span>
+
+
+
+              </div>
+
+
+
+
+
+
+            </h1>
+            <h1></h1>
+            <h1></h1>
+            <h1></h1>
           </div>
+      
           <div class="social-container">
             <a href="https://www.facebook.com/sonacement/" target="_blank"
               ><i class="icon ion-logo-facebook"></i
@@ -65,7 +88,9 @@ const Home = ({_notice, _RemoveNotice, text}) => {
             <a href="https://www.instagram.com/sonacement/"target="_blank"
               ><i class="icon ion-logo-instagram"></i
             ></a>
+          
           </div>
+          
         </div>
       </div>
       <div class="parallax__group info-container">
@@ -80,7 +105,7 @@ Phone: +977 82 530182<br></br>
 Po. Box No. 20499<br></br>
 Email : info@sonacement.com<br></br></p>
           
-          <a href="#" class="btn">Order Now</a>
+          <a href="/contact" class="btn">Order Now</a>
         </div>
       </div>
     </div>
