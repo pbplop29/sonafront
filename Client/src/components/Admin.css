@@ -256,7 +256,8 @@ form .button input:hover {
 .dashboard__intro__text {
   margin-top: 1rem;
   font-size: 1.1rem;
-  font-family: "Raleway", serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
 }
 
 .dashboard__title::after {
