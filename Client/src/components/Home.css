@@ -96,7 +96,7 @@ a {
 }
 
 .people3 {
-  background: url("../assets/people5.png") repeat center;
+  background: url("../assets/people4.png") no-repeat left;
   background-size: cover;
   transform: translateZ(0) scale(1);
   z-index: 6;
@@ -157,8 +157,9 @@ a {
 }
 
 .info-container {
-  background-color: #000000;
-  background-image: linear-gradient(210deg, #000000 50%, #f5d406 130%);
+  background: url("../assets/homebg.png");
+
+  background-size: cover;
   transform: translateZ(0) scale(1);
   z-index: 8;
   display: flex;

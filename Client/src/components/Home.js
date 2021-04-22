@@ -40,7 +40,7 @@ const Home = ({_notice, _RemoveNotice, text}) => {
         
       
         
-        <div class="parallax__layer people2"></div>
+        
         <div class="parallax__layer people3"></div>
         <div class="parallax__layer hero-text">
         
