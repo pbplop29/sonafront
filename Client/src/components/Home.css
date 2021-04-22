@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 .modal {
   background-color: #f9484a;
   background-image: linear-gradient(315deg, #f9484a 50%, #fbd72b 99%);
@@ -44,14 +46,18 @@ body {
 a {
   text-decoration: none;
   color: #fff;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  word-spacing: 8px;
 }
 
 .btn {
-  margin-top: 2rem;
   border: 1.5px solid #fff;
   border-radius: 0.75rem;
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1rem;
   transition: all 0.3s ease-in-out;
+
+  margin-top: 2rem;
 }
 
 .btn:hover {
@@ -182,16 +188,19 @@ a {
 }
 
 .info-container h2 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 1rem;
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  word-spacing: 2px;
 }
 .info-container p {
-  font-family: "Josefin Slab", serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 1rem;
   color: white;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 @media (min-width: 760px) {
@@ -212,7 +221,7 @@ a {
     width: 75%;
   }
 
-  .text-container p:nth-of-type(1) {
+  .text-container p {
     font-size: 1rem;
     width: 75%;
     margin: 1rem 0;

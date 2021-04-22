@@ -94,18 +94,18 @@ const Home = ({_notice, _RemoveNotice, text}) => {
         </div>
       </div>
       <div class="parallax__group info-container">
-        <img src={Profile} alt="Lively and colourful concert" />
+        <img src={Profile}  />
         <div class="text-container">
           <h2>Sona Cement</h2>
-          <p>Nepal's 1st and Only Low Alkaline Cement</p>
+        
           <p>
           Address: Sonapur Minerals & Oil Pvt. Ltd.<br></br>
 Bijauri-1,Dang,Nepal<br></br>
 Phone: +977 82 530182<br></br>
 Po. Box No. 20499<br></br>
-Email : info@sonacement.com<br></br></p>
-          
+Email : info@sonacement.com<br></br></p><br></br>
           <a href="/contact" class="btn">Order Now</a>
+          
         </div>
       </div>
     </div>

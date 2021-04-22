@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400");
 
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 *,
@@ -115,12 +113,16 @@ body {
   font-size: 2rem;
   text-align: center;
   color: white;
+  word-spacing: 10px;
+  letter-spacing: -2.5px;
 }
 .skw-page__description {
   font-size: 16px;
   text-align: center;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
+  font-weight: bold;
+  word-spacing: 1px;
 }
 .skw-page__link {
   color: #ffa0a0;

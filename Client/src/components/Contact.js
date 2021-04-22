@@ -67,7 +67,7 @@ const Contact = () => {
                                     </div>
                                     <div class="input-box">
                                         <span class="details">Contact Number</span>
-                                            <input type="text" placeholder="Enter your password" required></input>
+                                            <input type="text" placeholder="Enter your contact number" required></input>
                                     </div>
                                     <div class="input-box">
                                         <span class="details">Address</span>

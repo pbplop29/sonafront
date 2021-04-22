@@ -31,6 +31,7 @@ const Products = () => {
                         <h2 className='product__title'>Sona</h2>
                         <span className='product__desc'>
                         Ordinary Porrtland Cement (OPC) <br></br>
+                        It is used for general construction purposes where special properties are not required such as reinforced concrete buildings, bridges, pavements, and where soil conditions are normal.
 
                             
                         </span>
@@ -50,8 +51,8 @@ const Products = () => {
                     <div className="content">
                         <h2 className='product__title'>Sona Shree</h2>
                         <span className='product__desc'>
-                        Pozzolana Portland Cement (PPC)
-                            
+                        Pozzolana Portland Cement (PPC) <br></br>
+                        They can be reliably utilized in the construction of marine structures, masonry mortars and plastering, hydraulic structures, sewage pipes, dams, etc. PPC is also employed in all other applications where OPC is used.    
                         </span>
 
                     </div>
@@ -67,9 +68,8 @@ const Products = () => {
                     <div className="content">
                         <h2 className='product__title3'>Clinker</h2>
                         <span className='product__desc3'>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, eos? 
-                            Rerum odit reiciendis aperiam deserunt molestias hic
-                            ex eveniet. Magnam, voluptatem dolor corporis iste r
+                        Cement clinker is a solid material produced in the manufacture of Portland cement as an intermediary product.
+                        Clinker, combined with additives and ground into a fine powder, is used as a binder in cement products.
                             
                         </span>
 
@@ -80,9 +80,13 @@ const Products = () => {
             </div>
             </Fade>
 
-
-
+            <Fade bottom>
+                <div className="btn__body">
+                <a href="/contact" class="btn__products">Order Now</a>
+                </div>
+                
             
+            </Fade>
             
             
             
