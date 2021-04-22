@@ -89,10 +89,11 @@ a {
 }
 
 .people2 {
-  background: url("../assets/people2.png") no-repeat center;
+  background: url("../assets/people4.png") no-repeat left;
   background-size: cover;
-  transform: translateZ(-125px) scale(1.4167);
+  transform: translateZ(-5px) scale(1);
   z-index: 5;
+  opacity: 0.5;
 }
 
 .people3 {
@@ -140,7 +141,7 @@ a {
 
 .social-container {
   position: absolute;
-  right: 1rem;
+  left: 1rem;
   bottom: 1.2rem;
 }
 
@@ -148,12 +149,12 @@ a {
   font-size: 2rem;
   margin-right: 0.8rem;
   transition: 1s;
-  color: black;
+  color: white;
 }
 .social-container i:hover {
   font-size: 2.2rem;
   margin-right: 0.8rem;
-  color: white;
+  color: #f27121;
   transition: 1s;
 }
 
@@ -239,5 +240,23 @@ a {
     background-size: cover;
     transform: translateZ(-600px) scale(3.1);
     z-index: 1;
+  }
+
+  .social-container i {
+    font-size: 1.5rem;
+    margin-right: 0.8rem;
+    transition: 1s;
+    color: white;
+  }
+  .social-container i:hover {
+    font-size: 2.2rem;
+    margin-right: 0.8rem;
+    color: #f27121;
+    transition: 1s;
+  }
+  .social-container {
+    position: absolute;
+    left: 1rem;
+    bottom: 1.2rem;
   }
 }
