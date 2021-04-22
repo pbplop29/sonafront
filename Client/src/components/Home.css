@@ -62,7 +62,7 @@ a {
 .wrapper {
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   perspective: 290px;
 }
 
@@ -96,7 +96,7 @@ a {
 }
 
 .people3 {
-  background: url("../assets/people4.png") repeat center;
+  background: url("../assets/people5.png") repeat center;
   background-size: cover;
   transform: translateZ(0) scale(1);
   z-index: 6;
@@ -140,18 +140,18 @@ a {
 
 .social-container {
   position: absolute;
-  left: 2.5rem;
-  bottom: 2.5rem;
+  left: 1rem;
+  bottom: 1.2rem;
 }
 
 .social-container i {
   font-size: 2rem;
-  margin-right: 1rem;
+  margin-right: 0.8rem;
   transition: 1s;
 }
 .social-container i:hover {
   font-size: 2.2rem;
-  margin-right: 1rem;
+  margin-right: 0.8rem;
   color: #d64623;
   transition: 1s;
 }
@@ -166,6 +166,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 110vh;
 }
 
 .info-container img {
@@ -197,7 +198,7 @@ a {
 
 .text-container p:nth-of-type(2) {
   font-family: "Josefin Slab", serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 3rem;
 }
 

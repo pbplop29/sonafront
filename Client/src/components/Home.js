@@ -70,7 +70,7 @@ const Home = ({_notice, _RemoveNotice, text}) => {
         <img src={Profile} alt="Lively and colourful concert" />
         <div class="text-container">
           <h2>Sona Cement</h2>
-          <p>What would life be if we had no courage to attempt anything?</p>
+          <p>Nepal's 1st and Only Low Alkaline Cement</p>
           <p>- Vincent Van Gogh</p>
           <a href="#" class="btn">Order Now</a>
         </div>
