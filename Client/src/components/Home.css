@@ -140,7 +140,7 @@ a {
 
 .social-container {
   position: absolute;
-  left: 1rem;
+  right: 1rem;
   bottom: 1.2rem;
 }
 
@@ -148,11 +148,12 @@ a {
   font-size: 2rem;
   margin-right: 0.8rem;
   transition: 1s;
+  color: black;
 }
 .social-container i:hover {
   font-size: 2.2rem;
   margin-right: 0.8rem;
-  color: #d64623;
+  color: white;
   transition: 1s;
 }
 
