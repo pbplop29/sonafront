@@ -3,7 +3,7 @@ import Header from './Header'
 import MenuX from './MenuX'
 import Profile from '../assets/profile.jpg'
 import './Home.css';
-
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 import banner1 from '../assets/banner1.jpg';
 
@@ -36,6 +36,8 @@ const Home = ({_notice, _RemoveNotice, text}) => {
       
        <div class="wrapper">
       <div class="parallax__group hero-container">
+        
+      
         <div class="parallax__layer sky"></div>
         
       
@@ -71,7 +73,13 @@ const Home = ({_notice, _RemoveNotice, text}) => {
         <div class="text-container">
           <h2>Sona Cement</h2>
           <p>Nepal's 1st and Only Low Alkaline Cement</p>
-          <p>- Vincent Van Gogh</p>
+          <p>
+          Address: Sonapur Minerals & Oil Pvt. Ltd.<br></br>
+Bijauri-1,Dang,Nepal<br></br>
+Phone: +977 82 530182<br></br>
+Po. Box No. 20499<br></br>
+Email : info@sonacement.com<br></br></p>
+          
           <a href="#" class="btn">Order Now</a>
         </div>
       </div>
