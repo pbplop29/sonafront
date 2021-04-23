@@ -25,6 +25,14 @@ function App() {
   const [notice_text, setText] = useState("");
 
   useEffect(() => {
+    if(localStorage.visited != 1){
+      firebase.firestore().collection("stuff").doc("stuff for website").update({
+	total_visit: firebase.firestore.FieldValue.increment(1)
+      }).catch((error) => {
+	console.log(error);
+      });
+      localStorage.visited = 1;
+    }
     noti_stream = firebase.firestore().collection("stuff").doc("stuff for website").onSnapshot((doc) => {
       if(doc.data()["Notification"] == 0){
 	setText(doc.data()["Notice"]);
