@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 .view_counter {
+=======
+.view_counter{
+>>>>>>> b71042eb36c91822f93f32776196f0557083e24f
   position: relative;
   top: 420px;
   left: 400px;
@@ -382,10 +386,17 @@ form .button input:hover {
   animation: spin 2s linear infinite;
 }
 
+<<<<<<< HEAD
 .circle {
   position: absolute;
   left: 50%;
   top: 35%;
+=======
+.circle{
+  position: absolute;
+  left: 50%;
+  top: 35%; 
+>>>>>>> b71042eb36c91822f93f32776196f0557083e24f
   border: 8px solid #f3f3f3;
   border-radius: 50%;
   border-top: 8px solid #f9484a;
