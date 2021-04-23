@@ -5,6 +5,7 @@ import Header from './Header'
 import MenuX from './MenuX'
 import firebase from "firebase";
 import {v4 as uuidv4} from 'uuid';
+import CountUp from 'react-countup';
 
 import 'react-pro-sidebar/dist/css/styles.css';
 import './AdminSidebar.scss';
@@ -56,7 +57,15 @@ class Admin extends React.Component{
 
   render(){
     if(this.state.checkinguser){
-      return <progress></progress>
+      return(
+	<section>
+	<div class="circle"></div>
+	<div className="wave wave1"></div>
+        <div className="wave wave2"></div>
+        <div className="wave wave3"></div>
+        <div className="wave wave4"></div>
+        </section>
+      )
     }
     else if(this.state.loggedin){
       return <AdminPanel logout = {this.logout} />
@@ -245,26 +254,44 @@ class NotificationPanel extends React.Component{
           </div>
           </div>
           </div>
-          
-
-
-
-
-
-
-
       </section>
       </div>
     )
   }
 }
 
+var views_stream;
+
 class DashboardPanel extends React.Component{
+  
+  constructor(props){
+    super(props);
+    this.state = {views: 0, coming_in: false, update: false};
+  }
+
+  componentDidMount(){
+    views_stream =firebase.firestore().collection("stuff").doc("stuff for website").onSnapshot((doc) => {
+      if(!this.state.update){
+	this.setState({views: doc.data()["total_visit"], views_2: doc.data()["total_visit"], coming_in: true});
+      }
+      else{
+	this.setState({views_2: doc.data()["total_visit"]});
+      }
+    });
+  }
+
   render(){
     return(
       <div>
         <section>
-          <div className="container__dad">
+      <div className= "view_counter">
+      {this.state.update &&
+	<CountUp start={this.state.views} end={this.state.views_2} onEnd={() => this.setState({views: this.state.views_2})}/>
+      }
+      {this.state.coming_in &&
+	  <CountUp start={0} end={this.state.views} onEnd={() => this.setState({coming_in: false, update: true})}/> 
+      }</div>
+      <div className="container__dad">
             <div className="container">
           <div className="dashboard__content">
           <div className='dashboard__title'>Introduction to Admin Panel</div>
@@ -280,23 +307,6 @@ class DashboardPanel extends React.Component{
             <div className="wave wave3"></div>
             <div className="wave wave4"></div>
             </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       </div>
     )
   }

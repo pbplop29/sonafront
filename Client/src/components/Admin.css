@@ -1,3 +1,9 @@
+.view_counter {
+  position: relative;
+  top: 420px;
+  left: 400px;
+}
+
 section {
   position: relative;
   width: 100%;
@@ -374,6 +380,18 @@ form .button input:hover {
   height: 70px;
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
+}
+
+.circle {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #f9484a;
+  width: 70px;
+  height: 70px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
 }
 
 /* Safari */
