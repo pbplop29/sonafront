@@ -59,7 +59,7 @@ class Admin extends React.Component{
     if(this.state.checkinguser){
       return(
 	<section>
-	<div class="circle"></div>
+	<div class="circle__admin"></div>
 	<div className="wave wave1"></div>
         <div className="wave wave2"></div>
         <div className="wave wave3"></div>
@@ -284,13 +284,8 @@ class DashboardPanel extends React.Component{
     return(
       <div>
         <section>
-      <div className= "view_counter">
-      {this.state.update &&
-	<CountUp start={this.state.views} end={this.state.views_2} onEnd={() => this.setState({views: this.state.views_2})}/>
-      }
-      {this.state.coming_in &&
-	  <CountUp start={0} end={this.state.views} onEnd={() => this.setState({coming_in: false, update: true})}/> 
-      }</div>
+
+       
       <div className="container__dad">
             <div className="container">
           <div className="dashboard__content">
@@ -300,8 +295,20 @@ class DashboardPanel extends React.Component{
           You can customize emails, descriptions, notification, all from here. <br></br><br></br>Click on the menu icon on the top left to open the respective drawers.
           </div>
           </div>
+          <div className= "view_counter">
+        <h1 className='count__start'>The website has been visited the following no of times:</h1>
+      {this.state.update &&
+	<CountUp start={this.state.views} end={this.state.views_2} onEnd={() => this.setState({views: this.state.views_2} )}/> 
+      }
+      {this.state.coming_in &&
+	  <CountUp start={0} end={this.state.views} onEnd={() => this.setState({coming_in: false, update: true})}/> 
+      }</div>
+
           </div>
           </div>
+
+          
+    
         <div className="wave wave1"></div>
             <div className="wave wave2"></div>
             <div className="wave wave3"></div>

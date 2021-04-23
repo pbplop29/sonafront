@@ -1,11 +1,24 @@
-<<<<<<< HEAD
 .view_counter {
-=======
-.view_counter{
->>>>>>> b71042eb36c91822f93f32776196f0557083e24f
   position: relative;
-  top: 420px;
-  left: 400px;
+  font-size: 4rem;
+  text-align: center;
+}
+.count__start {
+  font-size: 20px;
+
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
+.count__start::after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 3px;
+  background-color: #f9484a;
+  background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
 }
 
 section {
@@ -376,7 +389,7 @@ form .button input:hover {
   background-image: linear-gradient(-90deg, #f9484a 0%, #fbd72b 74%);
 }
 
-.circle__progress {
+.circle__admin__progress {
   border: 8px solid #f3f3f3;
   border-radius: 50%;
   border-top: 8px solid #f9484a;
@@ -386,17 +399,10 @@ form .button input:hover {
   animation: spin 2s linear infinite;
 }
 
-<<<<<<< HEAD
-.circle {
+.circle__admin {
   position: absolute;
   left: 50%;
   top: 35%;
-=======
-.circle{
-  position: absolute;
-  left: 50%;
-  top: 35%; 
->>>>>>> b71042eb36c91822f93f32776196f0557083e24f
   border: 8px solid #f3f3f3;
   border-radius: 50%;
   border-top: 8px solid #f9484a;
