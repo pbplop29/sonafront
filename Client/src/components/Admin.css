@@ -206,6 +206,7 @@ form input[type="radio"] {
 form .button {
   height: 2.8125rem;
   margin: 1rem 0;
+  width: 12rem;
 }
 form .button input {
   height: 100%;

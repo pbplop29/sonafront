@@ -54,7 +54,7 @@ const Home = ({_notice, _RemoveNotice, text}) => {
         <div class="parallax__layer hero-text">
         
         <div class="year-container">
-            <h1 id='hideDiv' >
+            <h1  >
               <div className="box__down">
               <span></span>
               <span></span>
