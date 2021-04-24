@@ -5,6 +5,9 @@ import React from 'react'
 import sonasac3 from '../assets/sonasac3.png'
 import sonasac4 from '../assets/sonasac4.png'
 import Clinker from '../assets/Clinker.png'
+import{
+    Link
+} from "react-router-dom";
 
 
 import Fade from 'react-reveal/Fade';
@@ -82,7 +85,7 @@ const Products = () => {
 
             <Fade bottom>
                 <div className="btn__body">
-                <a href="/contact" class="btn__products">Order Now</a>
+                <Link to={'/contact'} class="btn__products">Order Now</Link>
                 </div>
                 
             

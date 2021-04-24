@@ -11,6 +11,9 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import './Home.css';
 import $ from 'jquery';
+import{
+    Link
+} from "react-router-dom";
 
 
 
@@ -104,7 +107,7 @@ Bijauri-1,Dang,Nepal<br></br>
 Phone: +977 82 530182<br></br>
 Po. Box No. 20499<br></br>
 Email : info@sonacement.com<br></br></p><br></br>
-          <a href="/contact" class="btn">Order Now</a>
+          <Link to={'/contact'} class="btn">Order Now</Link>
           
         </div>
       </div>
