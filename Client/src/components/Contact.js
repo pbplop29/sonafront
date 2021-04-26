@@ -80,7 +80,7 @@ const Contact = () => {
                                     </div>
                     <div>
         		    <ReCAPTCHA className='recap'
-                    sitekey = "6LfSxKYaAAAAAKFtCw5Gl1CG6yJ_Y-K1mr6o8D4w"
+                    sitekey = "6LeoBboaAAAAAEhJbNmyvN9fFsAKdI-Pk0W-eqmY"
                     onChange = {captchadone}
         		    />
                                 </div>
