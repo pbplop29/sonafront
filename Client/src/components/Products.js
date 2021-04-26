@@ -25,7 +25,9 @@ const Products = () => {
             
             <div className="product__body"> 
             
-
+            <div className="btn__body">
+                <Link to={'/contact'} class="btn__products">Order Now</Link>
+                </div>
 
             <Fade bottom>
             <div className="card">
@@ -82,15 +84,9 @@ const Products = () => {
                 <img src={Clinker} alt=""/>
             </div>
             </Fade>
-
-            <Fade bottom>
-                <div className="btn__body">
-                <Link to={'/contact'} class="btn__products">Order Now</Link>
-                </div>
-                
             
-            </Fade>
-            
+        
+        
             
             
             

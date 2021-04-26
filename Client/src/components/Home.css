@@ -353,3 +353,14 @@ a {
   color: transparent;
   letter-spacing: 0.4rem;
 }
+
+.anch:hover {
+  text-decoration: none;
+  font-family: "Black Ops One", cursive;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  stroke-width: 1px;
+
+  color: transparent;
+  letter-spacing: 0.45rem;
+}

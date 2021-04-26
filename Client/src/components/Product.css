@@ -10,7 +10,7 @@
   flex-direction: column;
 
   align-items: center;
-  min-height: 210vh;
+
   background-color: #f9484a;
   background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
 }
@@ -264,7 +264,7 @@
   border-radius: 0.75rem;
   padding: 0.75rem 1rem;
   transition: all 0.3s ease-in-out;
-
+  position: relative;
   margin-top: 12rem;
 }
 
