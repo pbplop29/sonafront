@@ -20,7 +20,6 @@ import{
     <Link to={'/gallery'}>Gallery</Link>
     
     <Link to={'/contact'}>Contact Us</Link>
-    
     <Link to={'/'}>
 
     <div className="image">
@@ -28,6 +27,7 @@ import{
     </div>
     
     </Link>
+
     </Menu>
             </div>
         )
