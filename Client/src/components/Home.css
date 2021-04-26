@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
 .modal {
   background-color: #f9484a;
   background-image: linear-gradient(315deg, #f9484a 50%, #fbd72b 99%);
@@ -316,4 +319,37 @@ a {
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px);
   }
+}
+
+.footer {
+  color: white;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  font-family: "Satisfy", cursive;
+  background: grey;
+  opacity: 0.8;
+}
+
+.alpa {
+  margin-left: 0.8rem;
+  font-size: 1rem;
+  font-family: "Black Ops One", cursive;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+  letter-spacing: 0.4rem;
+}
+
+.anch {
+  text-decoration: none;
+  font-family: "Black Ops One", cursive;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  stroke-width: 1px;
+
+  color: transparent;
+  letter-spacing: 0.4rem;
 }

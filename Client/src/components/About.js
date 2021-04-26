@@ -214,7 +214,7 @@ const About = () =>
             </h2>
           <h2 class="skw-page__heading">Location</h2>
             <p class="skw-page__description">
-            Address: Sonapur Minerals & Oil Pvt. Ltd.<br></br>
+            Address: Sonapur Minerals & Oil Ltd.<br></br>
 Bijauri-1,Dang,Nepal<br></br>
 Phone: +977 82 530182<br></br>
 Po. Box No. 20499<br></br>
@@ -367,7 +367,7 @@ Email : info@sonacement.com<br></br>
 <Fade bottom>
 <h1>Location</h1>
   <div className='mobile__details'>
-  Address: Sonapur Minerals & Oil Pvt. Ltd.<br></br>
+  Address: Sonapur Minerals & Oil Ltd.<br></br>
 Bijauri-1,Dang,Nepal<br></br>
 Phone: +977 82 530182<br></br>
 Po. Box No. 20499<br></br>

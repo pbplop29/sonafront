@@ -6,7 +6,7 @@ import './Home.css';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 import banner1 from '../assets/banner1.jpg';
-
+import Fade from 'react-reveal/Fade';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import './Home.css';
@@ -102,7 +102,7 @@ const Home = ({_notice, _RemoveNotice, text}) => {
           <h2>Sona Cement</h2>
         
           <p>
-          Address: Sonapur Minerals & Oil Pvt. Ltd.<br></br>
+          Address: Sonapur Minerals & Oil Ltd.<br></br>
 Bijauri-1,Dang,Nepal<br></br>
 Phone: +977 82 530182<br></br>
 Po. Box No. 20499<br></br>
@@ -111,6 +111,13 @@ Email : info@sonacement.com<br></br></p><br></br>
           
         </div>
       </div>
+
+
+    
+      <div className="footer">
+      <p >Produced by <span class='alpa'> <a href='#' class='anch'>ALPABIRAM</a></span></p>
+      </div>
+  
     </div>
     </div>
     )

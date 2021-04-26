@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css' 
-import Sonalogoborder from '../assets/sona-logo-png-border.png'
+import Sonalogoborder from '../assets/sona-logo-png-border-2.png'
 import{
   Link
 } from "react-router-dom";
